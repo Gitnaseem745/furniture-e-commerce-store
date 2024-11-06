@@ -8,6 +8,8 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
