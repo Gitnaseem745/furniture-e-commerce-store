@@ -10,6 +10,9 @@ const config: Config = {
     extend: {
       backgroundImage: {
       },
+      screens: {
+        'custom-450': '450px', // Custom 450px breakpoint
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

@@ -13,7 +13,7 @@ interface HomeCardProps {
 }
 
 const HomeCard: React.FC<HomeCardProps> = ({
-    backgroundImgUrl = "/homeCard1.webp",
+    backgroundImgUrl = "/heroCard1.webp",
     productTitle = "Wooden Chair",
     productPrice = "$199",
     productPageLink = "#",
