@@ -30,7 +30,7 @@ const OfferCard: React.FC<OfferCardProps> = ({
                     <h3 className="text-[16px] mt-1">{discount}</h3>
                 </div>
                 <p className="text-[16px]">{productDiscription}</p>
-                <Link className="bg-white text-neutral-600 text-sm rounded-full hover:bg-[#152420] hover:text-white w-[136px] h-[50px] justify-center items-center flex" href={productLink}>{buttonText}</Link>
+                <Link className="bg-white text-neutral-600 text-sm rounded-full hover:bg-[#152420] hover:text-white w-[136px] h-[50px] justify-center items-center flex transition-all ease-in delay-50" href={productLink}>{buttonText}</Link>
             </div>
         </div>
     </div>

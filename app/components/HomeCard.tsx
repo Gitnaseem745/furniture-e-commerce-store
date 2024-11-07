@@ -1,6 +1,7 @@
 'use client';
 
 import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 interface HomeCardProps {
     backgroundImgUrl?: string;
@@ -35,10 +36,10 @@ const HomeCard: React.FC<HomeCardProps> = ({
         </div>
         {button && (
             <Link
-                className="bg-white rounded-3xl max-w-fit px-6 py-3 hover:bg-[#274C4F] hover:text-white shadow-lg"
+                className="bg-white rounded-3xl max-w-fit px-6 py-3 hover:bg-[#274C4F] text-black hover:text-white transition-all ease-in delay-50 shadow-lg"
                 href={productPageLink}
             >
-                <img width={20} height={10} src="/arrow.png" alt="" />
+                <FaArrowRightLong />
             </Link>
         )}
     </div>

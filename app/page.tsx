@@ -1,5 +1,6 @@
 import HomeCard from "./components/HomeCard";
 import OfferCard from "./components/OfferCard";
+import ProductCard from "./components/ProductCard";
 
  const Home: React.FC = () => (
     <div className="px-6 py-20 flex flex-row gap-10 w-full h-screen flex-wrap justify-center items-center">
@@ -18,6 +19,9 @@ import OfferCard from "./components/OfferCard";
             productPrice={card.productPrice} productPageLink={card.productPageLink} width={card.width}
             height={card.height} button={card.button} />
         ))}
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
     </div>
   );
   const offerCardData = [
