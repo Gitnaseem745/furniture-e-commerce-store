@@ -1,9 +1,11 @@
 import HomeCard from "./components/HomeCard";
+import Navbar from "./components/Navbar";
 import OfferCard from "./components/OfferCard";
 import ProductCard from "./components/ProductCard";
 
  const Home: React.FC = () => (
-    <div className="px-6 py-20 flex flex-row gap-10 w-full h-screen flex-wrap justify-center items-center">
+     <div className="flex mt-[120px] flex-row gap-10 w-full h-screen flex-wrap justify-center items-center">
+        <Navbar />
         {offerCardData.map((card, i) => (
             <OfferCard key={i} productImgUrl={card.productImgUrl} discountType={card.discountType}
             discount={card.discount} productDiscription={card.productDiscription} buttonText={card.buttonText}
