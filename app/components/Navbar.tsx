@@ -4,15 +4,16 @@ import Link from "next/link";
 import { FaRegHeart, FaShuffle } from "react-icons/fa6";
 import { IoIosSearch, IoMdContact } from "react-icons/io";
 import { RiShoppingBag2Line } from "react-icons/ri";
+import NavbarItems from "./NavbarItems";
 interface NavbarProps {
-    desktop: boolean;
-    mobile: boolean;
+    desktop?: boolean;
+    mobile?: boolean;
 }
 const Navbar: React.FC<NavbarProps> = ({
     desktop = true,
     mobile = false,
 }) => (
-    <nav className="w-full h-[100px] fixed top-0 bg-white text-black z-50 grid grid-cols-2 gap-9 px-[120px]">
+    <nav className="w-full h-[100px] fixed top-0 bg-white text-black z-10 grid grid-cols-2 gap-9 px-[120px]">
         <div className="flex flex-row justify-start items-center gap-8">
             <h1 className="text-2xl font-semibold">Furniture</h1>
             <div className="relative">
@@ -21,13 +22,7 @@ const Navbar: React.FC<NavbarProps> = ({
             </div>
         </div>
         <div className="flex flex-row items-center gap-10 justify-end">
-            <div className="flex gap-8">
-                {
-                    menuItems.map((item, i) => (
-                        <Link className="hover:text-[#456A6D] transition-all ease-in delay-75" href={item.toLowerCase().replaceAll(" ", "-")} key={i}>{item}</Link>
-                    ))
-                }
-            </div>
+            <NavbarItems divCss="gap-8" linkCss="hover:text-[#456A6D] transition-all ease-in delay-75"/>
             <div className="flex gap-8">
                 {
                     icons.map((icon, i) => <Link href={icon.link} key={i} className="hover:text-[#456A6D] text-[18px] transition-all ease-in delay-75">{icon.icon}</Link>)
@@ -36,7 +31,6 @@ const Navbar: React.FC<NavbarProps> = ({
         </div>
     </nav>
 )
-const menuItems = ["Home", "Shop", "About Us", "News", "Contact Us"];
 const icons = [
     {
         icon: <IoMdContact />,

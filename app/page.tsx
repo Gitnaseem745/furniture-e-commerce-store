@@ -1,20 +1,19 @@
 import HomeCard from "./components/HomeCard";
 import Navbar from "./components/Navbar";
+import NavModal from "./components/NavModal";
 import OfferCard from "./components/OfferCard";
 import ProductCard from "./components/ProductCard";
 
  const Home: React.FC = () => (
-     <div className="flex mt-[120px] flex-row gap-10 w-full h-screen flex-wrap justify-center items-center">
-        <Navbar />
+     <>
+     <div className="overflow-hidden">
+        {/* <Navbar /> */}
+        <NavModal />
+        <div className="flex flex-row gap-10 w-full h-screen flex-wrap justify-center items-center px-20">
         {offerCardData.map((card, i) => (
             <OfferCard key={i} productImgUrl={card.productImgUrl} discountType={card.discountType}
             discount={card.discount} productDiscription={card.productDiscription} buttonText={card.buttonText}
             productLink={card.productLink} backgroundColor={card.backgroundColor}/>
-        ))}
-        {heroCardData.map((card, i) => (
-            <HomeCard key={i} backgroundImgUrl={card.backgroundImgUrl} productTitle={card.productTitle}
-            productPrice={card.productPrice} productPageLink={card.productPageLink} width={card.width}
-            height={card.height} button={card.button} />
         ))}
         {homeCardData.map((card, i) => (
             <HomeCard key={i} backgroundImgUrl={card.backgroundImgUrl} productTitle={card.productTitle}
@@ -24,34 +23,36 @@ import ProductCard from "./components/ProductCard";
         <ProductCard />
         <ProductCard />
         <ProductCard />
+        </div>
     </div>
+    </>
   );
   const offerCardData = [
     {
-        productImgUrl: "/offers-image-1.webp",
+        productImgUrl: "images/offers-image-1.webp",
         discountType: "Special Discount",
         discount: "30% OFF",
         productDiscription: "Aliquet sagittis purus.",
         buttonText: "Browse Now",
-        productLink: "#",
+        productLink: "/products/aliquet",
         backgroundColor: "#9BA89E",
     },
     {
-        productImgUrl: "/offers-image-3.webp",
+        productImgUrl: "images/offers-image-3.webp",
         discountType: "Weekly Discount",
         discount: "25% OFF",
         productDiscription: "Nulla facilisi cras fermentum.",
         buttonText: "Browse Now",
-        productLink: "#",
+        productLink: "/products/nulla",
         backgroundColor: "#D39E76",
     },
     {
-        productImgUrl: "/offers-image-2.webp",
+        productImgUrl: "images/offers-image-2.webp",
         discountType: "Birthday Discount",
         discount: "40% OFF",
         productDiscription: "Porta non pulvinar neque.",
         buttonText: "Browse Now",
-        productLink: "#",
+        productLink: "/products/porta",
         backgroundColor: "#A7A29C",
     },
   ]
@@ -60,7 +61,7 @@ import ProductCard from "./components/ProductCard";
         backgroundImgUrl: "/heroCard1.webp",
         productTitle: "Wooden Chair",
         productPrice: "$199",
-        productPageLink: "#",
+        productPageLink: "/products/wooden-chair",
         width: 333,
         height: 500,
         button: true,
@@ -69,7 +70,7 @@ import ProductCard from "./components/ProductCard";
         backgroundImgUrl: "/heroCard2.webp",
         productTitle: "Pretium Elite",
         productPrice: "$130",
-        productPageLink: "#",
+        productPageLink: "/products/pretium-elite",
         width: 331,
         height: 303,
         button: true,
@@ -77,37 +78,37 @@ import ProductCard from "./components/ProductCard";
   ]
   const homeCardData = [
     {
-        backgroundImgUrl: "/homeCard1.webp",
+        backgroundImgUrl: "images/homeCard1.webp",
         productTitle: "Living Room",
         productPrice: "15 products",
-        productPageLink: "#",
+        productPageLink: "/products/living-room",
         width: 580,
         height: 455,
         button: false,
     },
     {
-        backgroundImgUrl: "/homeCard2.webp",
+        backgroundImgUrl: "images/homeCard2.webp",
         productTitle: "Bedroom",
         productPrice: "24 products",
-        productPageLink: "#",
+        productPageLink: "/products/bedroom",
         width: 580,
         height: 283,
         button: false,
     },
     {
-        backgroundImgUrl: "/homeCard3.webp",
+        backgroundImgUrl: "images/homeCard3.webp",
         productTitle: "Walk-in Closet",
         productPrice: "30 products",
-        productPageLink: "#",
+        productPageLink: "/products/walk-in-closet",
         width: 275,
         height: 275,
         button: false,
     },
     {
-        backgroundImgUrl: "/homeCard4.webp",
+        backgroundImgUrl: "images/homeCard4.webp",
         productTitle: "Kitchen",
         productPrice: "24 products",
-        productPageLink: "#",
+        productPageLink: "/products/kitchen",
         width: 275,
         height: 275,
         button: false,

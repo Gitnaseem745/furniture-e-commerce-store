@@ -22,7 +22,7 @@ const OfferCard: React.FC<OfferCardProps> = ({
     <div style={{
         backgroundColor: backgroundColor
     }}
-    className={`p-4 flex flex-wrap justify-center items-center w-[410px] max-h-[247px] custom-450:h-fit rounded-xl`}>
+    className={`p-4 flex flex-wrap justify-center items-center w-[410px] max-h-[247px] custom-450:h-fit rounded-xl text-white`}>
         <div className="flex flex-row gap-4 w-full items-center">
             <img src={productImgUrl} className="rounded-xl max-w-[138px]"/>
             <div className="flex flex-col gap-6 justify-start items-start">
