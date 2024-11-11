@@ -15,7 +15,7 @@ const Navbar: React.FC<NavbarProps> = ({
 }) => (
     <nav className="w-full h-[100px] fixed top-0 bg-white text-black z-10 grid grid-cols-2 gap-9 px-[120px]">
         <div className="flex flex-row justify-start items-center gap-8">
-            <h1 className="text-2xl font-semibold">Furniture</h1>
+            <Link href={'/'} className="text-2xl font-semibold">Furniture</Link>
             <div className="relative">
                 <input className="w-[382px] h-[45px] border-[2px] p-2 pl-5 rounded-full focus:outline-none focus:border-[#274C4F]" type="text" placeholder="Search" />
                 <IoIosSearch className="absolute right-5 top-[29%] text-xl "/>

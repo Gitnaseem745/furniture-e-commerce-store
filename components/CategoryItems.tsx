@@ -13,7 +13,7 @@ const CategoryItems: React.FC<CategoryItemsProps> = ({ divCss, linkCss }) => (
     <div className={`flex ${divCss}`}>
             {
                 categoryItems.map((category, i) => (
-                    <Link href={category.name.toLowerCase().replaceAll(" ", "-")} className="flex gap-2 items-center  hover:text-white cursor-pointer">
+                    <Link href={category.name.toLowerCase().replaceAll(" ", "-")} key={i} className="flex gap-2 items-center  hover:text-white cursor-pointer">
                         <p className="text-xl">{category.icon}</p>
                         <p className={`${linkCss}`} key={i}>{category.name}</p>
                     </Link>

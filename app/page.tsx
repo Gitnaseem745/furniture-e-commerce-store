@@ -1,15 +1,15 @@
-import HomeCard from "./components/HomeCard";
-import Navbar from "./components/Navbar";
-import NavModal from "./components/NavModal";
-import OfferCard from "./components/OfferCard";
-import ProductCard from "./components/ProductCard";
+import Link from "next/link";
+import HomeCard from "../components/HomeCard";
+import Navbar from "../components/Navbar";
+import NavModal from "../components/NavModal";
+import OfferCard from "../components/OfferCard";
+import ProductCard from "../components/ProductCard";
 
  const Home: React.FC = () => (
      <>
-     <div className="overflow-hidden">
-        {/* <Navbar /> */}
-        <NavModal />
-        <div className="flex flex-row gap-10 w-full h-screen flex-wrap justify-center items-center px-20">
+     <div>
+        {/* <NavModal /> */}
+        <div className="flex flex-row mt-[120px] gap-10 w-full h-screen flex-wrap justify-center items-center px-20">
         {offerCardData.map((card, i) => (
             <OfferCard key={i} productImgUrl={card.productImgUrl} discountType={card.discountType}
             discount={card.discount} productDiscription={card.productDiscription} buttonText={card.buttonText}
@@ -20,16 +20,14 @@ import ProductCard from "./components/ProductCard";
             productPrice={card.productPrice} productPageLink={card.productPageLink} width={card.width}
             height={card.height} button={card.button} />
         ))}
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        <Link href={'/products/chair-commodo'}><ProductCard /></Link>
         </div>
     </div>
     </>
   );
   const offerCardData = [
     {
-        productImgUrl: "images/offers-image-1.webp",
+        productImgUrl: "/images/offers-image-1.webp",
         discountType: "Special Discount",
         discount: "30% OFF",
         productDiscription: "Aliquet sagittis purus.",
@@ -58,7 +56,7 @@ import ProductCard from "./components/ProductCard";
   ]
   const heroCardData = [
     {
-        backgroundImgUrl: "/heroCard1.webp",
+        backgroundImgUrl: "images/heroCard1.webp",
         productTitle: "Wooden Chair",
         productPrice: "$199",
         productPageLink: "/products/wooden-chair",
@@ -67,7 +65,7 @@ import ProductCard from "./components/ProductCard";
         button: true,
     },
     {
-        backgroundImgUrl: "/heroCard2.webp",
+        backgroundImgUrl: "images/heroCard2.webp",
         productTitle: "Pretium Elite",
         productPrice: "$130",
         productPageLink: "/products/pretium-elite",
