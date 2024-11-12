@@ -1,15 +1,14 @@
+"use client"
 import ProductCard from '@/components/ProductCard'
 import Link from 'next/link'
 
 const Page = () => {
   return (
-    <div className='text-black'>
-        <h1>Products</h1>
+    <div className='text-black w-full flex justify-center items-center h-screen'>
         <ul>
-            <Link href={"/products/mug/coffe-table/$199.99/notavailable/null/nan/new"}><ProductCard /></Link>
+            <Link href="/products/product-6" ><ProductCard /></Link>
         </ul>
     </div>
   )
 }
-
 export default Page
