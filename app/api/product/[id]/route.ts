@@ -12,5 +12,11 @@ const products = Array.from({ length: 10 }, (_, index) => ({
 }));
 
 export async function GET(request: Request, { params }: { params: Promise<{ id: string }> }) {
-    
+    const resolvedParams = await params;
+    const product = products.find(p => p.id == resolvedParams.id);
+  if (product) {
+    return NextResponse.json(product);
+  } else {
+    return NextResponse.json({ error: 'Product not found' }, { status: 404 });
+  }
 }
