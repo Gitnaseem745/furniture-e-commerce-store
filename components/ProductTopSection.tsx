@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import Breadcrumb from "./BreadCrumb";
+import { useState } from "react";
+import Image from "next/image";
 
 interface ProductTopSectionProps {
     productImgUrl?: string;
@@ -18,10 +20,14 @@ const ProductTopSection: React.FC<ProductTopSectionProps> = ({
     productImgUrl = "/images/heroCard1.webp",
     productCategory
 }) => {
+    const [count, setCount] = useState<number>(1);
   return (
-    <section className="flex flex-row gap-8 w-full max-w-screen-xl max-h-screen mx-auto mt-20 bg-white p-8 rounded-lg shadow-md max-md:flex-col">
-        <div className="w-1/2 max-md:w-full flex justify-center items-center bg-gray-100 rounded-lg p-6">
-            <img src={productImgUrl} className="w-[480px] h-[600px] object-cover hover:scale-110 transition-transform duration-300" alt={productName} />
+    <section className="flex flex-row gap-8 w-full max-w-screen-xl max-h-screen mx-auto mt-20 bg-white p-8 rounded-lg max-md:flex-col">
+        <div className="w-1/2 max-md:w-full flex justify-center items-center bg-[#F8F8F8] rounded-lg p-6 overflow-hidden">
+        <Image src={`/${productImgUrl}`} width={400} height={400}
+        className="w-[480px] h-[600px] object-cover hover:scale-110 transition-transform duration-300"
+        alt={productName}
+        />
         </div>
         <div className="w-1/2 max-md:w-full flex flex-col gap-6 justify-start items-start py-10">
             <Breadcrumb />
@@ -35,9 +41,9 @@ const ProductTopSection: React.FC<ProductTopSectionProps> = ({
             <div className="flex items-center flex-col gap-4 mt-6">
                 <div className="flex flex-row gap-4">
                     <div className="relative flex justify-center items-center">
-                        <p className="absolute left-6 text-neutral-400 text-4xl mb-1">-</p>
-                        <Link className="text-sm rounded-full bg-white text-black border-[2px] border-neutral-400 w-[120px] h-[50px] justify-center items-center flex transition-all ease-in delay-50" href={'/'}> 1 </Link>
-                        <p className="absolute right-6 text-2xl text-neutral-400">+</p>
+                        <p onClick={() => setCount(count - 1)} className="cursor-pointer absolute left-6 text-neutral-400 text-4xl mb-1">-</p>
+                        <p className="text-sm rounded-full bg-white text-black border-[2px] border-neutral-400 w-[120px] h-[50px] justify-center items-center flex transition-all ease-in delay-50" href={'/'}> {count} </p>
+                        <p onClick={() => setCount(count + 1)} className="cursor-pointer absolute right-6 text-2xl text-neutral-400">+</p>
                     </div>
                     <Link className="text-sm rounded-full bg-[#274C4F] hover:bg-[#456A6D] text-white w-[166px] h-[50px] justify-center items-center flex transition-all ease-in delay-50" href={'/'}>
                         Add to cart
