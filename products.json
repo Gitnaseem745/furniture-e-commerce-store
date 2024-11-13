@@ -112,7 +112,7 @@
           "color": "Brown, Beige",
           "style": "Modern"
         }
-      }
+      },
       {
         "id": "product-9",
         "name": "Mid-Century Modern Velvet Sofa",
@@ -126,7 +126,7 @@
           "color": "Green, Brown",
           "style": "Mid-Century Modern"
         }
-      }
+      },
       {
         "id": "product-10",
         "name": "Modern Fabric Sofa with Sleek Design",
@@ -140,7 +140,7 @@
           "color": "Grey, Black",
           "style": "Modern"
         }
-      }
+      },
       {
         "id": "product-11",
         "name": "Modern Swivel Armchair with Headrest",
@@ -154,7 +154,7 @@
           "color": "Beige",
           "style": "Modern"
         }
-      }
+      },
       {
         "id": "product-12",
         "name": "Modern Upholstered Dining Chair",
@@ -168,7 +168,7 @@
           "color": "Grey, Brown",
           "style": "Modern"
         }
-      }
+      },
       {
         "id": "product-13",
         "name": "Modern Upholstered Bed with Button-Tufted Headboard",
@@ -182,7 +182,7 @@
           "color": "Green",
           "style": "Modern"
         }
-      }
+      },
       {
         "id": "product-14",
         "name": "Minimalist Wooden Bed Frame",
@@ -196,7 +196,7 @@
           "color": "Brown",
           "style": "Minimalist"
         }
-      }
+      },
       {
         "id": "product-15",
         "name": "Sculptural Ceramic Vase",
@@ -210,7 +210,7 @@
           "color": "White",
           "style": "Modern"
         }
-      }
+      },
       {
         "id": "product-16",
         "name": "Mid-Century Modern Nightstand",
@@ -224,7 +224,7 @@
           "color": "Brown",
           "style": "Mid-Century Modern"
         }
-      }
+      },
       {
         "id": "product-17",
         "name": "Bohemian Rattan Chair",
@@ -238,7 +238,7 @@
           "color": "Beige, Brown",
           "style": "Bohemian"
         }
-      }
+      },
       {
         "id": "product-18",
         "name": "Mid-Century Modern Coffee Table with Glass Top",
@@ -252,7 +252,7 @@
           "color": "Clear, Brown",
           "style": "Mid-Century Modern"
         }
-      }
+      },
       {
         "id": "product-19",
         "name": "Mid-Century Modern Dresser",
@@ -266,7 +266,7 @@
           "color": "Brown, White",
           "style": "Mid-Century Modern"
         }
-      }
+      },
       {
         "id": "product-20",
         "name": "Modern Marble Nesting Tables",
@@ -280,7 +280,7 @@
           "color": "White, Grey, Gold",
           "style": "Modern"
         }
-      }
+      },
       {
         "id": "product-21",
         "name": "Modern Fabric Sofa with Wooden Legs",
@@ -294,7 +294,7 @@
           "color": "Beige, Brown",
           "style": "Modern"
         }
-      }
+      },
       {
         "id": "product-22",
         "name": "Modern Dome Chair with Ottoman",
@@ -308,7 +308,7 @@
           "color": "Grey, Brown",
           "style": "Modern"
         }
-      }
+      },
       {
         "id": "product-23",
         "name": "Mid-Century Modern TV Stand with Glass Doors",
@@ -322,7 +322,7 @@
           "color": "Brown, Clear",
           "style": "Mid-Century Modern"
         }
-      }
+      },
       {
         "id": "product-24",
         "name": "Modern Console Table with Marble Top",
@@ -336,7 +336,7 @@
           "color": "Grey, Brown",
           "style": "Modern"
         }
-      }
+      },
       {
         "id": "product-25",
         "name": "Bold Yellow Velvet Bed",
@@ -350,7 +350,7 @@
           "color": "Yellow, Brown",
           "style": "Modern"
         }
-      }
+      },
       {
         "id": "product-26",
         "name": "Modern Velvet Sofa with Curved Arms",
@@ -364,7 +364,7 @@
           "color": "Grey",
           "style": "Modern"
         }
-      }
+      },
       {
         "id": "product-27",
         "name": "Classic Wooden Nightstand with Drawer",
@@ -378,7 +378,7 @@
           "color": "Brown",
           "style": "Classic"
         }
-      }
+      },
       {
         "id": "product-28",
         "name": "Adjustable Desk Lamp with Wooden Arm",
@@ -392,7 +392,7 @@
           "color": "White, Brown",
           "style": "Modern"
         }
-      }
+      },
       {
         "id": "product-29",
         "name": "Button-Tufted Ottoman",
@@ -405,6 +405,216 @@
           "material": "Fabric, Wood",
           "color": "Grey, Brown",
           "style": "Modern"
+        }
+      },
+      {
+        "id": "product-30",
+        "name": "Rustic Wooden Bed Frame",
+        "price": "$699.99",
+        "shortDis": "A sturdy and stylish bed frame with a rustic design.",
+        "img": "/public/images/product-30.webp",
+        "category": "Furniture",
+        "longDis": "This rustic wooden bed frame is perfect for creating a cozy and inviting bedroom. The solid wood construction and natural finish add a touch of warmth and character. Available in various sizes to fit your needs.",
+        "additionalInfo": {
+          "material": "Wood",
+          "color": "Brown",
+          "style": "Rustic"
+        }
+      },
+      {
+        "id": "product-31",
+        "name": "Modern Armchair with Wooden Legs",
+        "price": "$299.99",
+        "shortDis": "A stylish and comfortable armchair with a unique design.",
+        "img": "/public/images/product-31.webp",
+        "category": "Furniture",
+        "longDis": "This modern armchair features a curved design and a soft, upholstered seat. The wooden legs add a touch of warmth and style. Perfect for relaxing and reading a book.",
+        "additionalInfo": {
+          "material": "Fabric, Wood",
+          "color": "Blue, Brown",
+          "style": "Modern"
+        }
+      },
+      {
+        "id": "product-32",
+        "name": "Rustic Concrete Dining Table",
+        "price": "$1299.99",
+        "shortDis": "A sturdy and stylish dining table with a rustic look.",
+        "img": "/public/images/product-32.webp",
+        "category": "Furniture",
+        "longDis": "This rustic dining table features a concrete tabletop and a wooden base with an X-shaped design. The unique combination of materials creates a modern and industrial look. Perfect for hosting dinner parties or family meals.",
+        "additionalInfo": {
+          "material": "Concrete, Wood",
+          "color": "Grey, Brown",
+          "style": "Rustic"
+        }
+      },
+      {
+        "id": "product-33",
+        "name": "Ceramic Vase Set with Speckled Design",
+        "price": "$49.99",
+        "shortDis": "A stylish and modern vase set for your home.",
+        "img": "/public/images/product-33.webp",
+        "category": "Home Decor",
+        "longDis": "This ceramic vase set features two vases with a speckled design in white and pink. Perfect for displaying fresh or dried flowers. The minimalist design complements any interior style.",
+        "additionalInfo": {
+          "material": "Ceramic",
+          "color": "White, Pink",
+          "style": "Modern"
+        }
+      },
+      {
+        "id": "product-34",
+        "name": "Minimalist Wooden Bed Frame with Dark Bedding",
+        "price": "$699.99",
+        "shortDis": "A sleek and modern bed frame with a minimalist design.",
+        "img": "/public/images/product-34.webp",
+        "category": "Furniture",
+        "longDis": "This minimalist bed frame features a clean, contemporary design with a low-profile headboard. The dark bedding adds a touch of sophistication to the overall look. Perfect for creating a serene and stylish bedroom.",
+        "additionalInfo": {
+          "material": "Wood, Fabric",
+          "color": "Brown, Black, Grey",
+          "style": "Minimalist"
+        }
+      },
+      {
+        "id": "product-35",
+        "name": "Modern Two-Seater Sofa with Wooden Legs",
+        "price": "$699.99",
+        "shortDis": "A stylish and comfortable two-seater sofa with a modern design.",
+        "img": "/public/images/product-35.webp",
+        "category": "Furniture",
+        "longDis": "This modern sofa features a plush fabric upholstery and wooden legs. The clean lines and neutral color palette make it a versatile piece that can fit into any living room. Perfect for relaxing and entertaining guests.",
+        "additionalInfo": {
+          "material": "Fabric, Wood",
+          "color": "Grey, Brown",
+          "style": "Modern"
+        }
+      },
+      {
+        "id": "product-36",
+        "name": "Classic Nightstand with Two Drawers",
+        "price": "$179.99",
+        "shortDis": "A timeless nightstand with a classic design.",
+        "img": "/public/images/product-36.webp",
+        "category": "Furniture",
+        "longDis": "This classic nightstand features two spacious drawers for storing books, magazines, or other bedside essentials. The simple design and neutral color make it a versatile piece that can fit into any bedroom style. Perfect for a bedside table or accent piece.",
+        "additionalInfo": {
+          "material": "Wood",
+          "color": "Grey",
+          "style": "Classic"
+        }
+      },
+      {
+        "id": "product-37",
+        "name": "Mid-Century Modern Sideboard with Geometric Design",
+        "price": "$599.99",
+        "shortDis": "A stylish and functional sideboard with a geometric design.",
+        "img": "/public/images/product-37.webp",
+        "category": "Furniture",
+        "longDis": "This mid-century modern sideboard features a geometric design with contrasting wood tones and black accents. The spacious drawers and shelves provide ample storage space for your belongings. Perfect for adding a touch of retro style to your living room or dining room.",
+        "additionalInfo": {
+          "material": "Wood",
+          "color": "Brown, Black",
+          "style": "Mid-Century Modern"
+        }
+      },
+      {
+        "id": "product-38",
+        "name": "Modern Upholstered Bed with Gray Bedding",
+        "price": "$799.99",
+        "shortDis": "A stylish and comfortable bed with a soft gray color scheme.",
+        "img": "/public/images/product-38.webp",
+        "category": "Furniture",
+        "longDis": "This modern bed features a plush upholstered headboard and a matching gray comforter set. The clean lines and neutral colors create a serene and sophisticated look. Perfect for a master bedroom or guest room.",
+        "additionalInfo": {
+          "material": "Fabric",
+          "color": "Gray, Brown",
+          "style": "Modern"
+        }
+      },
+      {
+        "id": "product-39",
+        "name": "Mid-Century Modern Two-Seater Sofa with Button-Tufted Back",
+        "price": "$699.99",
+        "shortDis": "A stylish and comfortable two-seater sofa with a mid-century modern design.",
+        "img": "/public/images/product-39.webp",
+        "category": "Furniture",
+        "longDis": "This mid-century modern sofa features a button-tufted back and curved arms for a classic look. The soft, textured fabric and wooden legs add a touch of vintage charm to your living room. Perfect for relaxing and entertaining guests.",
+        "additionalInfo": {
+          "material": "Fabric, Wood",
+          "color": "Grey, Brown",
+          "style": "Mid-Century Modern"
+        }
+      },
+      {
+        "id": "product-40",
+        "name": "Modern Velvet Armchair with Metal Legs",
+        "price": "$399.99",
+        "shortDis": "A stylish and comfortable armchair with a bold yellow color.",
+        "img": "/public/images/product-40.webp",
+        "category": "Furniture",
+        "longDis": "This modern armchair features a plush velvet upholstery and sleek metal legs. The bold yellow color adds a vibrant touch to any room. Perfect for adding a pop of color to your living room or bedroom.",
+        "additionalInfo": {
+          "material": "Velvet, Metal",
+          "color": "Yellow, Silver",
+          "style": "Modern"
+        }
+      },
+      {
+        "id": "product-41",
+        "name": "Button-Tufted Armchair with Wooden Legs",
+        "price": "$349.99",
+        "shortDis": "A stylish and comfortable armchair with a button-tufted design.",
+        "img": "/public/images/product-41.webp",
+        "category": "Furniture",
+        "longDis": "This button-tufted armchair features a plush velvet upholstery and wooden legs. The classic design and neutral color make it a versatile piece that can fit into any room. Perfect for relaxing and unwinding.",
+        "additionalInfo": {
+          "material": "Velvet, Wood",
+          "color": "White, Brown",
+          "style": "Classic"
+        }
+      },
+      {
+        "id": "product-42",
+        "name": "Modern Coffee Table with Glass Top and Wooden Base",
+        "price": "$399.99",
+        "shortDis": "A stylish and functional coffee table with a modern design.",
+        "img": "/public/images/product-42.webp",
+        "category": "Furniture",
+        "longDis": "This modern coffee table features a tempered glass top and a wooden base with a unique design. The open shelf provides additional storage space for books, magazines, or remote controls. Perfect for adding a touch of contemporary style to your living room.",
+        "additionalInfo": {
+          "material": "Glass, Wood",
+          "color": "Clear, Brown",
+          "style": "Modern"
+        }
+      },
+      {
+        "id": "product-43",
+        "name": "Modern Swivel Chair with Pillow",
+        "price": "$399.99",
+        "shortDis": "A stylish and comfortable swivel chair with a modern design.",
+        "img": "/public/images/product-43.webp",
+        "category": "Furniture",
+        "longDis": "This modern swivel chair features a plush fabric upholstery and a swivel base for added flexibility. The included pillow provides extra comfort and style. Perfect for relaxing and unwinding in your living room or bedroom.",
+        "additionalInfo": {
+          "material": "Fabric, Metal",
+          "color": "Grey, Black",
+          "style": "Modern"
+        }
+      },
+      {
+        "id": "product-44",
+        "name": "Industrial Style Desk Lamp",
+        "price": "$79.99",
+        "shortDis": "A stylish and functional desk lamp with an industrial design.",
+        "img": "/public/images/product-44.webp",
+        "category": "Lighting",
+        "longDis": "This industrial-style desk lamp features a metal frame with a weathered bronze finish. The adjustable arm and versatile shade make it perfect for reading, working, or studying. A unique and eye-catching addition to your home office or workspace.",
+        "additionalInfo": {
+          "material": "Metal",
+          "color": "Bronze",
+          "style": "Industrial"
         }
       }
 ]
