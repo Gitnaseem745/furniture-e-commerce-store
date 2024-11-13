@@ -1,4 +1,5 @@
 // Footer.tsx
+import Link from 'next/link';
 import React from 'react';
 
 const Footer = () => {
@@ -62,20 +63,20 @@ const Footer = () => {
         <div className="flex justify-between items-center mt-8">
           <p className="text-sm">Copyright © 2024 - Naseem Ansari</p>
           <div className="flex space-x-4">
-            <a href="#" className="hover:opacity-75">
+            <Link href="/" className="hover:opacity-75">
               <i className="fab fa-instagram"></i>
-            </a>
-            <a href="#" className="hover:opacity-75">
+            </Link>
+            <Link href="/" className="hover:opacity-75">
               <i className="fab fa-linkedin"></i>
-            </a>
-            <a href="#" className="hover:opacity-75">
+            </Link>
+            <Link href="/" className="hover:opacity-75">
               <i className="fab fa-medium"></i>
-            </a>
+            </Link>
           </div>
           <div className="flex space-x-4 text-sm">
-            <a href="#" className="hover:underline">Privacy Policy</a>
-            <a href="#" className="hover:underline">Terms & Conditions</a>
-            <a href="#" className="hover:underline">Site Map</a>
+            <Link href="/" className="hover:underline">Privacy Policy</Link>
+            <Link href="/" className="hover:underline">Terms & Conditions</Link>
+            <Link href="/" className="hover:underline">Site Map</Link>
           </div>
         </div>
       </div>
