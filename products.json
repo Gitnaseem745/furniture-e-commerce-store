@@ -4,7 +4,7 @@
         "name": "Modern Walnut Coffee Table with Glass Top",
         "price": "$299.99",
         "shortDis": "Sleek and stylish coffee table with a glass top and lower shelf.",
-        "img": "/public/images/product-1.webp",
+        "img": "images/product-1.webp",
         "category": "Furniture",
         "longDis": "This modern coffee table is crafted from high-quality walnut wood and features a tempered glass top for a contemporary look. The lower shelf provides additional storage space for books, magazines, or remote controls.",
         "additionalInfo": {
@@ -19,7 +19,7 @@
         "name": "Modern Upholstered Bed with Wooden Frame",
         "price": "$999.99",
         "shortDis": "Luxurious bed with a plush upholstered headboard and a solid wood frame.",
-        "img": "/public/images/product-2.webp",
+        "img": "images/product-2.webp",
         "category": "Furniture",
         "longDis": "This modern bed features a curved upholstered headboard with vertical channel quilting for a sophisticated look. The sturdy wooden frame provides support and stability. Available in various sizes to fit your needs.",
         "additionalInfo": {
@@ -34,7 +34,7 @@
         "name": "Traditional Rocking Chair with Cushioned Seat",
         "price": "$399.99",
         "shortDis": "Comfortable and stylish rocking chair with a cushioned seat and back.",
-        "img": "/public/images/product-3.webp",
+        "img": "images/product-3.webp",
         "category": "Furniture",
         "longDis": "This traditional rocking chair is perfect for relaxing and unwinding. The smooth rocking motion provides a soothing experience. The cushioned seat and back offer comfort and support.",
         "additionalInfo": {
@@ -48,7 +48,7 @@
         "name": "Modern Two-Seater Sofa with Metal Legs",
         "price": "$799.99",
         "shortDis": "Sleek and stylish two-seater sofa with clean lines and metal legs.",
-        "img": "/public/images/product-4.webp",
+        "img": "images/product-4.webp",
         "category": "Furniture",
         "longDis": "This modern sofa is perfect for small spaces. The upholstered seat and back provide comfort, while the metal legs add a contemporary touch. The square arms offer a minimalist look.",
         "additionalInfo": {
@@ -62,7 +62,7 @@
         "name": "Modern Upholstered Bed with Wooden Legs",
         "price": "$899.99",
         "shortDis": "Stylish bed with a padded headboard and wooden legs.",
-        "img": "/public/images/product-5.webp",
+        "img": "images/product-5.webp",
         "category": "Furniture",
         "longDis": "This modern bed features a tufted upholstered headboard for a luxurious look. The sturdy wooden legs provide support and stability. Available in various sizes to fit your needs.",
         "additionalInfo": {
@@ -76,7 +76,7 @@
         "name": "Modern Upholstered Armchair",
         "price": "$299.99",
         "shortDis": "Stylish armchair with a comfortable upholstered seat and back.",
-        "img": "/public/images/product-6.webp",
+        "img": "images/product-6.webp",
         "category": "Furniture",
         "longDis": "This modern armchair features a curved upholstered seat and back for ultimate comfort. The unique wooden legs add a touch of style to any room. Perfect for relaxing and reading.",
         "additionalInfo": {
@@ -90,7 +90,7 @@
         "name": "Ceramic Vase Set with Wooden Stand",
         "price": "$79.99",
         "shortDis": "Elevate your home decor with this stylish ceramic vase set.",
-        "img": "/public/images/product-7.webp",
+        "img": "images/product-7.webp",
         "category": "Home Decor",
         "longDis": "This set includes two ceramic vases in a rich terracotta color and a wooden stand. Perfect for displaying dried flowers or greenery. The minimalist design complements any interior style.",
         "additionalInfo": {
@@ -104,7 +104,7 @@
         "name": "Modern Upholstered Bed with Wooden Frame",
         "price": "$899.99",
         "shortDis": "Sleek and stylish bed with a curved upholstered headboard and wooden frame.",
-        "img": "/public/images/product-8.webp",
+        "img": "images/product-8.webp",
         "category": "Furniture",
         "longDis": "This modern bed features a curved upholstered headboard for a sophisticated look. The sturdy wooden frame provides support and stability. Available in various sizes to fit your needs.",
         "additionalInfo": {
@@ -118,7 +118,7 @@
         "name": "Mid-Century Modern Velvet Sofa",
         "price": "$1299.99",
         "shortDis": "A stylish and comfortable sofa with a mid-century modern design.",
-        "img": "/public/images/product-9.webp",
+        "img": "images/product-9.webp",
         "category": "Furniture",
         "longDis": "This sofa features a plush velvet upholstery and button-tufted back cushions. The curved arms and tapered wooden legs add a touch of retro charm. Perfect for adding a touch of vintage style to your living room.",
         "additionalInfo": {
@@ -132,7 +132,7 @@
         "name": "Modern Fabric Sofa with Sleek Design",
         "price": "$899.99",
         "shortDis": "A minimalist and stylish sofa for contemporary living spaces.",
-        "img": "/public/images/product-10.webp",
+        "img": "images/product-10.webp",
         "category": "Furniture",
         "longDis": "This modern sofa features clean lines and a neutral color palette. The comfortable cushions and sleek metal legs make it a perfect addition to any modern living room. Available in various sizes to fit your needs.",
         "additionalInfo": {
@@ -146,7 +146,7 @@
         "name": "Modern Swivel Armchair with Headrest",
         "price": "$499.99",
         "shortDis": "A comfortable and stylish armchair with a swivel base and headrest.",
-        "img": "/public/images/product-11.webp",
+        "img": "images/product-11.webp",
         "category": "Furniture",
         "longDis": "This modern armchair is perfect for relaxing and unwinding. The plush upholstery and swivel base provide comfort and flexibility. The built-in headrest offers additional support.",
         "additionalInfo": {
@@ -160,7 +160,7 @@
         "name": "Modern Upholstered Dining Chair",
         "price": "$199.99",
         "shortDis": "A stylish and comfortable dining chair with a modern design.",
-        "img": "/public/images/product-12.webp",
+        "img": "images/product-12.webp",
         "category": "Furniture",
         "longDis": "This modern dining chair features a plush upholstered seat and back for added comfort. The sleek wooden legs complement any dining table. Perfect for everyday dining or special occasions.",
         "additionalInfo": {
@@ -174,7 +174,7 @@
         "name": "Modern Upholstered Bed with Button-Tufted Headboard",
         "price": "$799.99",
         "shortDis": "A stylish and comfortable bed with a green upholstered headboard.",
-        "img": "/public/images/product-13.webp",
+        "img": "images/product-13.webp",
         "category": "Furniture",
         "longDis": "This modern bed features a button-tufted headboard for a luxurious look. The soft green upholstery adds a touch of color to your bedroom. Available in various sizes to fit your needs.",
         "additionalInfo": {
@@ -188,7 +188,7 @@
         "name": "Minimalist Wooden Bed Frame",
         "price": "$699.99",
         "shortDis": "A simple and stylish bed frame for a minimalist bedroom.",
-        "img": "/public/images/product-14.webp",
+        "img": "images/product-14.webp",
         "category": "Furniture",
         "longDis": "This minimalist bed frame is made from high-quality wood and features a low-profile design. The clean lines and natural wood finish create a serene and calming atmosphere. Available in various sizes to fit your needs.",
         "additionalInfo": {
@@ -202,7 +202,7 @@
         "name": "Sculptural Ceramic Vase",
         "price": "$149.99",
         "shortDis": "A unique and artistic ceramic vase for your home.",
-        "img": "/public/images/product-15.webp",
+        "img": "images/product-15.webp",
         "category": "Home Decor",
         "longDis": "This stunning ceramic vase features a sculptural design with flowing lines and organic shapes. It's perfect for displaying dried flowers or greenery. A beautiful and eye-catching piece for any room.",
         "additionalInfo": {
@@ -216,7 +216,7 @@
         "name": "Mid-Century Modern Nightstand",
         "price": "$199.99",
         "shortDis": "A stylish and functional nightstand with two drawers.",
-        "img": "/public/images/product-16.webp",
+        "img": "images/product-16.webp",
         "category": "Furniture",
         "longDis": "This mid-century modern nightstand features two spacious drawers for storing your essentials. The tapered legs and clean lines add a touch of retro charm to your bedroom. Perfect for a bedside table or accent piece.",
         "additionalInfo": {
@@ -230,7 +230,7 @@
         "name": "Bohemian Rattan Chair",
         "price": "$299.99",
         "shortDis": "A cozy and stylish chair with a bohemian vibe.",
-        "img": "/public/images/product-17.webp",
+        "img": "images/product-17.webp",
         "category": "Furniture",
         "longDis": "This bohemian rattan chair is perfect for relaxing and unwinding. The comfortable cushion and unique rattan frame create a boho-chic look. Ideal for adding a touch of bohemian style to your living room or bedroom.",
         "additionalInfo": {
@@ -244,7 +244,7 @@
         "name": "Mid-Century Modern Coffee Table with Glass Top",
         "price": "$399.99",
         "shortDis": "A stylish and functional coffee table with a glass top and wooden frame.",
-        "img": "/public/images/product-18.webp",
+        "img": "images/product-18.webp",
         "category": "Furniture",
         "longDis": "This mid-century modern coffee table features a tempered glass top and a sturdy wooden frame. The angled legs add a touch of retro charm to your living room. Perfect for displaying decor items or serving drinks.",
         "additionalInfo": {
@@ -258,7 +258,7 @@
         "name": "Mid-Century Modern Dresser",
         "price": "$499.99",
         "shortDis": "A stylish and functional dresser with ample storage space.",
-        "img": "/public/images/product-19.webp",
+        "img": "images/product-19.webp",
         "category": "Furniture",
         "longDis": "This mid-century modern dresser features four spacious drawers and an open shelf for displaying decor items. The sleek design and warm wood tones add a touch of vintage charm to your bedroom. Perfect for storing clothes, accessories, or linens.",
         "additionalInfo": {
@@ -272,7 +272,7 @@
         "name": "Modern Marble Nesting Tables",
         "price": "$699.99",
         "shortDis": "A stylish and functional set of nesting tables with a modern design.",
-        "img": "/public/images/product-20.webp",
+        "img": "images/product-20.webp",
         "category": "Furniture",
         "longDis": "This set of nesting tables features three round marble tops in different sizes and colors. The gold-finished metal base adds a touch of luxury. Perfect for adding a touch of modern elegance to your living room or bedroom.",
         "additionalInfo": {
@@ -286,7 +286,7 @@
         "name": "Modern Fabric Sofa with Wooden Legs",
         "price": "$799.99",
         "shortDis": "A stylish and comfortable sofa with a modern design.",
-        "img": "/public/images/product-21.webp",
+        "img": "images/product-21.webp",
         "category": "Furniture",
         "longDis": "This modern sofa features a plush fabric upholstery and wooden legs. The clean lines and neutral color palette make it a versatile piece that can fit into any living room. Perfect for relaxing and entertaining guests.",
         "additionalInfo": {
@@ -300,7 +300,7 @@
         "name": "Modern Dome Chair with Ottoman",
         "price": "$499.99",
         "shortDis": "A unique and stylish chair with a dome-shaped seat and matching ottoman.",
-        "img": "/public/images/product-22.webp",
+        "img": "images/product-22.webp",
         "category": "Furniture",
         "longDis": "This modern chair features a distinctive dome-shaped seat covered in a soft, textured fabric. The matching ottoman provides additional seating or footrest options. A perfect piece for adding a touch of contemporary style to your living room or bedroom.",
         "additionalInfo": {
@@ -314,7 +314,7 @@
         "name": "Mid-Century Modern TV Stand with Glass Doors",
         "price": "$599.99",
         "shortDis": "A stylish and functional TV stand with a mid-century modern design.",
-        "img": "/public/images/product-23.webp",
+        "img": "images/product-23.webp",
         "category": "Furniture",
         "longDis": "This mid-century modern TV stand features a sleek design with glass doors and open shelves. The tapered legs and warm wood finish add a touch of vintage charm to your living room. Perfect for storing your TV, gaming consoles, and other media equipment.",
         "additionalInfo": {
@@ -328,7 +328,7 @@
         "name": "Modern Console Table with Marble Top",
         "price": "$499.99",
         "shortDis": "A stylish and functional console table with a marble top.",
-        "img": "/public/images/product-24.webp",
+        "img": "images/product-24.webp",
         "category": "Furniture",
         "longDis": "This modern console table features a sleek design with a marble top and wooden base. Perfect for entryways, hallways, or living rooms. Use it to display decor items, keys, or other small items.",
         "additionalInfo": {
@@ -342,7 +342,7 @@
         "name": "Bold Yellow Velvet Bed",
         "price": "$899.99",
         "shortDis": "A vibrant and stylish bed with a tufted headboard.",
-        "img": "/public/images/product-25.webp",
+        "img": "images/product-25.webp",
         "category": "Furniture",
         "longDis": "This bold yellow velvet bed is sure to make a statement in any bedroom. The tufted headboard adds a touch of luxury, while the wooden legs provide a classic touch. Available in various sizes to fit your needs.",
         "additionalInfo": {
@@ -356,7 +356,7 @@
         "name": "Modern Velvet Sofa with Curved Arms",
         "price": "$1299.99",
         "shortDis": "A stylish and comfortable sofa with curved arms and plush cushions.",
-        "img": "/public/images/product-26.webp",
+        "img": "images/product-26.webp",
         "category": "Furniture",
         "longDis": "This modern sofa features a sleek design with curved arms and plush cushions. The velvet upholstery adds a touch of luxury, while the slim legs provide a minimalist look. Perfect for relaxing and entertaining guests.",
         "additionalInfo": {
@@ -370,7 +370,7 @@
         "name": "Classic Wooden Nightstand with Drawer",
         "price": "$149.99",
         "shortDis": "A timeless nightstand with a classic design.",
-        "img": "/public/images/product-27.webp",
+        "img": "images/product-27.webp",
         "category": "Furniture",
         "longDis": "This classic nightstand features a simple and elegant design with a single drawer for storage. The wooden frame and turned legs add a traditional touch to your bedroom. Perfect for a bedside table or accent piece.",
         "additionalInfo": {
@@ -384,7 +384,7 @@
         "name": "Adjustable Desk Lamp with Wooden Arm",
         "price": "$39.99",
         "shortDis": "A functional and stylish desk lamp for your workspace.",
-        "img": "/public/images/product-28.webp",
+        "img": "images/product-28.webp",
         "category": "Lighting",
         "longDis": "This adjustable desk lamp features a flexible wooden arm and a white metal shade. The lamp can be easily adjusted to provide optimal lighting for reading, working, or studying. A perfect addition to your home office or study.",
         "additionalInfo": {
@@ -398,7 +398,7 @@
         "name": "Button-Tufted Ottoman",
         "price": "$79.99",
         "shortDis": "A stylish and functional ottoman for your living room or bedroom.",
-        "img": "/public/images/product-29.webp",
+        "img": "images/product-29.webp",
         "category": "Furniture",
         "longDis": "This button-tufted ottoman is perfect for adding a touch of style and comfort to your home. Use it as a footrest, extra seating, or a surface for displaying decorative items. The wooden legs provide a sturdy base and a touch of warmth.",
         "additionalInfo": {
@@ -412,7 +412,7 @@
         "name": "Rustic Wooden Bed Frame",
         "price": "$699.99",
         "shortDis": "A sturdy and stylish bed frame with a rustic design.",
-        "img": "/public/images/product-30.webp",
+        "img": "images/product-30.webp",
         "category": "Furniture",
         "longDis": "This rustic wooden bed frame is perfect for creating a cozy and inviting bedroom. The solid wood construction and natural finish add a touch of warmth and character. Available in various sizes to fit your needs.",
         "additionalInfo": {
@@ -426,7 +426,7 @@
         "name": "Modern Armchair with Wooden Legs",
         "price": "$299.99",
         "shortDis": "A stylish and comfortable armchair with a unique design.",
-        "img": "/public/images/product-31.webp",
+        "img": "images/product-31.webp",
         "category": "Furniture",
         "longDis": "This modern armchair features a curved design and a soft, upholstered seat. The wooden legs add a touch of warmth and style. Perfect for relaxing and reading a book.",
         "additionalInfo": {
@@ -440,7 +440,7 @@
         "name": "Rustic Concrete Dining Table",
         "price": "$1299.99",
         "shortDis": "A sturdy and stylish dining table with a rustic look.",
-        "img": "/public/images/product-32.webp",
+        "img": "images/product-32.webp",
         "category": "Furniture",
         "longDis": "This rustic dining table features a concrete tabletop and a wooden base with an X-shaped design. The unique combination of materials creates a modern and industrial look. Perfect for hosting dinner parties or family meals.",
         "additionalInfo": {
@@ -454,7 +454,7 @@
         "name": "Ceramic Vase Set with Speckled Design",
         "price": "$49.99",
         "shortDis": "A stylish and modern vase set for your home.",
-        "img": "/public/images/product-33.webp",
+        "img": "images/product-33.webp",
         "category": "Home Decor",
         "longDis": "This ceramic vase set features two vases with a speckled design in white and pink. Perfect for displaying fresh or dried flowers. The minimalist design complements any interior style.",
         "additionalInfo": {
@@ -468,7 +468,7 @@
         "name": "Minimalist Wooden Bed Frame with Dark Bedding",
         "price": "$699.99",
         "shortDis": "A sleek and modern bed frame with a minimalist design.",
-        "img": "/public/images/product-34.webp",
+        "img": "images/product-34.webp",
         "category": "Furniture",
         "longDis": "This minimalist bed frame features a clean, contemporary design with a low-profile headboard. The dark bedding adds a touch of sophistication to the overall look. Perfect for creating a serene and stylish bedroom.",
         "additionalInfo": {
@@ -482,7 +482,7 @@
         "name": "Modern Two-Seater Sofa with Wooden Legs",
         "price": "$699.99",
         "shortDis": "A stylish and comfortable two-seater sofa with a modern design.",
-        "img": "/public/images/product-35.webp",
+        "img": "images/product-35.webp",
         "category": "Furniture",
         "longDis": "This modern sofa features a plush fabric upholstery and wooden legs. The clean lines and neutral color palette make it a versatile piece that can fit into any living room. Perfect for relaxing and entertaining guests.",
         "additionalInfo": {
@@ -496,7 +496,7 @@
         "name": "Classic Nightstand with Two Drawers",
         "price": "$179.99",
         "shortDis": "A timeless nightstand with a classic design.",
-        "img": "/public/images/product-36.webp",
+        "img": "images/product-36.webp",
         "category": "Furniture",
         "longDis": "This classic nightstand features two spacious drawers for storing books, magazines, or other bedside essentials. The simple design and neutral color make it a versatile piece that can fit into any bedroom style. Perfect for a bedside table or accent piece.",
         "additionalInfo": {
@@ -510,7 +510,7 @@
         "name": "Mid-Century Modern Sideboard with Geometric Design",
         "price": "$599.99",
         "shortDis": "A stylish and functional sideboard with a geometric design.",
-        "img": "/public/images/product-37.webp",
+        "img": "images/product-37.webp",
         "category": "Furniture",
         "longDis": "This mid-century modern sideboard features a geometric design with contrasting wood tones and black accents. The spacious drawers and shelves provide ample storage space for your belongings. Perfect for adding a touch of retro style to your living room or dining room.",
         "additionalInfo": {
@@ -524,7 +524,7 @@
         "name": "Modern Upholstered Bed with Gray Bedding",
         "price": "$799.99",
         "shortDis": "A stylish and comfortable bed with a soft gray color scheme.",
-        "img": "/public/images/product-38.webp",
+        "img": "images/product-38.webp",
         "category": "Furniture",
         "longDis": "This modern bed features a plush upholstered headboard and a matching gray comforter set. The clean lines and neutral colors create a serene and sophisticated look. Perfect for a master bedroom or guest room.",
         "additionalInfo": {
@@ -538,7 +538,7 @@
         "name": "Mid-Century Modern Two-Seater Sofa with Button-Tufted Back",
         "price": "$699.99",
         "shortDis": "A stylish and comfortable two-seater sofa with a mid-century modern design.",
-        "img": "/public/images/product-39.webp",
+        "img": "images/product-39.webp",
         "category": "Furniture",
         "longDis": "This mid-century modern sofa features a button-tufted back and curved arms for a classic look. The soft, textured fabric and wooden legs add a touch of vintage charm to your living room. Perfect for relaxing and entertaining guests.",
         "additionalInfo": {
@@ -552,7 +552,7 @@
         "name": "Modern Velvet Armchair with Metal Legs",
         "price": "$399.99",
         "shortDis": "A stylish and comfortable armchair with a bold yellow color.",
-        "img": "/public/images/product-40.webp",
+        "img": "images/product-40.webp",
         "category": "Furniture",
         "longDis": "This modern armchair features a plush velvet upholstery and sleek metal legs. The bold yellow color adds a vibrant touch to any room. Perfect for adding a pop of color to your living room or bedroom.",
         "additionalInfo": {
@@ -566,7 +566,7 @@
         "name": "Button-Tufted Armchair with Wooden Legs",
         "price": "$349.99",
         "shortDis": "A stylish and comfortable armchair with a button-tufted design.",
-        "img": "/public/images/product-41.webp",
+        "img": "images/product-41.webp",
         "category": "Furniture",
         "longDis": "This button-tufted armchair features a plush velvet upholstery and wooden legs. The classic design and neutral color make it a versatile piece that can fit into any room. Perfect for relaxing and unwinding.",
         "additionalInfo": {
@@ -580,7 +580,7 @@
         "name": "Modern Coffee Table with Glass Top and Wooden Base",
         "price": "$399.99",
         "shortDis": "A stylish and functional coffee table with a modern design.",
-        "img": "/public/images/product-42.webp",
+        "img": "images/product-42.webp",
         "category": "Furniture",
         "longDis": "This modern coffee table features a tempered glass top and a wooden base with a unique design. The open shelf provides additional storage space for books, magazines, or remote controls. Perfect for adding a touch of contemporary style to your living room.",
         "additionalInfo": {
@@ -594,7 +594,7 @@
         "name": "Modern Swivel Chair with Pillow",
         "price": "$399.99",
         "shortDis": "A stylish and comfortable swivel chair with a modern design.",
-        "img": "/public/images/product-43.webp",
+        "img": "images/product-43.webp",
         "category": "Furniture",
         "longDis": "This modern swivel chair features a plush fabric upholstery and a swivel base for added flexibility. The included pillow provides extra comfort and style. Perfect for relaxing and unwinding in your living room or bedroom.",
         "additionalInfo": {
@@ -608,7 +608,7 @@
         "name": "Industrial Style Desk Lamp",
         "price": "$79.99",
         "shortDis": "A stylish and functional desk lamp with an industrial design.",
-        "img": "/public/images/product-44.webp",
+        "img": "images/product-44.webp",
         "category": "Lighting",
         "longDis": "This industrial-style desk lamp features a metal frame with a weathered bronze finish. The adjustable arm and versatile shade make it perfect for reading, working, or studying. A unique and eye-catching addition to your home office or workspace.",
         "additionalInfo": {
