@@ -32,7 +32,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
             </div>
         </div>
         <div className="h-[20%] flex justify-center items-center flex-col">
-            <h1 className="text-[18px] hover:text-[#456A6D] cursor-pointer transition-all ease-in delay-75">{productName}</h1>
+            <h1 className="text-[16px] text-center hover:text-[#456A6D] cursor-pointer transition-all ease-in delay-75 px-3">{productName}</h1>
             <p className="text-xs font-semibold mt-1 text-neutral-500 cursor-pointer transition-all ease-in delay-75 hover:text-[#456A6D]">{productCategory}</p>
         </div>
         <hr />

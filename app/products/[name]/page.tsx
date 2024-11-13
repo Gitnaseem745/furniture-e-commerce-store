@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import ProductTopSection from '@/components/ProductTopSection';
 
 interface ProductPageProps {
-  params: Promise<{ id: string; }>
+  params: Promise<{ name: string }>
 }
 
 interface Product {
@@ -19,22 +19,21 @@ interface Product {
 }
 
 const ProductPage = ({ params }: ProductPageProps) => {
-  const { id } = use(params);
+  const { name } = use(params);
   const [product, setProduct] = useState<Product | null>(null);
 
   useEffect(() => {
     async function fetchProduct() {
-      const response = await fetch(`/api/product/${id}`);
-      if (response.ok) {
-        const data = await response.json();
-        setProduct(data);
-      } else {
-        console.error('Product not found');
+      const response = await fetch(`/api/products?name=${name}`);
+      if (!response.ok) {
+        throw new Error('Product not found');
       }
+      const data = await response.json();
+      setProduct(data);
     }
 
     fetchProduct();
-  }, [id]);
+  }, [name]);
 
   if (!product) return <p>Loading...</p>;
 
