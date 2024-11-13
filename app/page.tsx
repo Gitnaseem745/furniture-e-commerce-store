@@ -1,14 +1,10 @@
 import Link from "next/link";
 import HomeCard from "../components/HomeCard";
-import Navbar from "../components/Navbar";
-import NavModal from "../components/NavModal";
 import OfferCard from "../components/OfferCard";
 import ProductCard from "../components/ProductCard";
 
  const Home: React.FC = () => (
      <>
-     <div>
-        {/* <NavModal /> */}
         <div className="flex flex-row mt-[120px] gap-10 w-full h-screen flex-wrap justify-center items-center px-20">
         {offerCardData.map((card, i) => (
             <OfferCard key={i} productImgUrl={card.productImgUrl} discountType={card.discountType}
@@ -22,7 +18,6 @@ import ProductCard from "../components/ProductCard";
         ))}
         <Link href={'/products/chair-commodo'}><ProductCard /></Link>
         </div>
-    </div>
     </>
   );
   const offerCardData = [
@@ -36,7 +31,7 @@ import ProductCard from "../components/ProductCard";
         backgroundColor: "#9BA89E",
     },
     {
-        productImgUrl: "images/offers-image-3.webp",
+        productImgUrl: "/images/offers-image-3.webp",
         discountType: "Weekly Discount",
         discount: "25% OFF",
         productDiscription: "Nulla facilisi cras fermentum.",
@@ -45,7 +40,7 @@ import ProductCard from "../components/ProductCard";
         backgroundColor: "#D39E76",
     },
     {
-        productImgUrl: "images/offers-image-2.webp",
+        productImgUrl: "/images/offers-image-2.webp",
         discountType: "Birthday Discount",
         discount: "40% OFF",
         productDiscription: "Porta non pulvinar neque.",
@@ -56,7 +51,7 @@ import ProductCard from "../components/ProductCard";
   ]
   const heroCardData = [
     {
-        backgroundImgUrl: "images/heroCard1.webp",
+        backgroundImgUrl: "/images/heroCard1.webp",
         productTitle: "Wooden Chair",
         productPrice: "$199",
         productPageLink: "/products/wooden-chair",
@@ -65,7 +60,7 @@ import ProductCard from "../components/ProductCard";
         button: true,
     },
     {
-        backgroundImgUrl: "images/heroCard2.webp",
+        backgroundImgUrl: "/images/heroCard2.webp",
         productTitle: "Pretium Elite",
         productPrice: "$130",
         productPageLink: "/products/pretium-elite",
@@ -76,7 +71,7 @@ import ProductCard from "../components/ProductCard";
   ]
   const homeCardData = [
     {
-        backgroundImgUrl: "images/homeCard1.webp",
+        backgroundImgUrl: "/images/homeCard1.webp",
         productTitle: "Living Room",
         productPrice: "15 products",
         productPageLink: "/products/living-room",
@@ -85,7 +80,7 @@ import ProductCard from "../components/ProductCard";
         button: false,
     },
     {
-        backgroundImgUrl: "images/homeCard2.webp",
+        backgroundImgUrl: "/images/homeCard2.webp",
         productTitle: "Bedroom",
         productPrice: "24 products",
         productPageLink: "/products/bedroom",
@@ -94,7 +89,7 @@ import ProductCard from "../components/ProductCard";
         button: false,
     },
     {
-        backgroundImgUrl: "images/homeCard3.webp",
+        backgroundImgUrl: "/images/homeCard3.webp",
         productTitle: "Walk-in Closet",
         productPrice: "30 products",
         productPageLink: "/products/walk-in-closet",
@@ -103,7 +98,7 @@ import ProductCard from "../components/ProductCard";
         button: false,
     },
     {
-        backgroundImgUrl: "images/homeCard4.webp",
+        backgroundImgUrl: "/images/homeCard4.webp",
         productTitle: "Kitchen",
         productPrice: "24 products",
         productPageLink: "/products/kitchen",
