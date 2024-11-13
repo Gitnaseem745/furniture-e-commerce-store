@@ -38,7 +38,7 @@ const ProductPage = ({ params }: ProductPageProps) => {
   if (!product) return <p>Loading...</p>;
 
   return (
-    <div className="p-10">
+    <div className="px-10">
       <Navbar />
       <ProductTopSection
         productDescription={product.shortDis}

@@ -27,7 +27,7 @@ const Page = () => {
         fetchProducts();
     }, [])
   return (
-    <div className='text-black mt-[120px] w-full flex justify-center items-center h-screen flex-wrap flex-row gap-10'>
+    <div className='text-black w-full flex justify-center items-center max-h-fit flex-wrap flex-row gap-10'>
             { products?.map( product =>(
                     <Link href={`/products/${product.name.toLowerCase().replaceAll(' ', "-")}`} key={product.id} >
                         <ProductCard productName={product.name} productPrice={product.price} productImgUrl={product.img} productCategory={product.category}  />

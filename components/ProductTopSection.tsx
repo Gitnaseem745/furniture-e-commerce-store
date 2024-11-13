@@ -4,6 +4,9 @@ import Link from "next/link";
 import Breadcrumb from "./BreadCrumb";
 import { useState } from "react";
 import Image from "next/image";
+import { FaDiscord, FaFacebook, FaRegHeart, FaShare, FaShuffle } from "react-icons/fa6";
+import { FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import { LuSofa } from "react-icons/lu";
 
 interface ProductTopSectionProps {
     productImgUrl?: string;
@@ -22,7 +25,7 @@ const ProductTopSection: React.FC<ProductTopSectionProps> = ({
 }) => {
     const [count, setCount] = useState<number>(1);
   return (
-    <section className="flex flex-row gap-8 w-full max-w-screen-xl max-h-screen mx-auto mt-20 bg-white p-8 rounded-lg max-md:flex-col">
+    <section className="flex flex-row gap-8 w-full max-w-screen-xl max-h-screen mx-auto  bg-white p-8 rounded-lg max-md:flex-col">
         <div className="w-1/2 max-md:w-full flex justify-center items-center bg-[#F8F8F8] rounded-lg p-6 overflow-hidden">
         <Image src={`/${productImgUrl}`} width={400} height={400}
         className="w-[480px] h-[600px] object-cover hover:scale-110 transition-transform duration-300"
@@ -42,26 +45,26 @@ const ProductTopSection: React.FC<ProductTopSectionProps> = ({
                 <div className="flex flex-row gap-4">
                     <div className="relative flex justify-center items-center">
                         <p onClick={() => setCount(count - 1)} className="cursor-pointer absolute left-6 text-neutral-400 text-4xl mb-1">-</p>
-                        <p className="text-sm rounded-full bg-white text-black border-[2px] border-neutral-400 w-[120px] h-[50px] justify-center items-center flex transition-all ease-in delay-50" href={'/'}> {count} </p>
+                        <p className="text-sm rounded-full bg-white text-black border-[2px] border-neutral-400 w-[120px] h-[50px] justify-center items-center flex transition-all ease-in delay-50" > {count} </p>
                         <p onClick={() => setCount(count + 1)} className="cursor-pointer absolute right-6 text-2xl text-neutral-400">+</p>
                     </div>
                     <Link className="text-sm rounded-full bg-[#274C4F] hover:bg-[#456A6D] text-white w-[166px] h-[50px] justify-center items-center flex transition-all ease-in delay-50" href={'/'}>
                         Add to cart
                     </Link>
                 </div>
-                <div className="flex flex-row gap-4 items-start justify-center w-full h-[10px] text-sm">
-                    <button className="text-gray-500 hover:text-gray-700">Wishlist</button>
-                    <button className="text-gray-500 hover:text-gray-700">Compare</button>
-                    <button className="text-gray-500 hover:text-gray-700">Size Guide</button>
+                <div className="flex flex-row gap-4 justify-start w-full h-[10px] text-sm mt-6">
+                    <button className="text-gray-500 hover:text-gray-700 flex gap-2 items-center "><FaRegHeart /> Wishlist</button>
+                    <button className="text-gray-500 hover:text-gray-700 flex gap-2 items-center"><FaShuffle /> Compare</button>
+                    <button className="text-gray-500 hover:text-gray-700 flex gap-2 items-center"><LuSofa /> Size Guide</button>
                 </div>
             </div>
             <div className="mt-6">
-                <p className="text-sm text-gray-400">Category: {productCategory || "Furniture"}</p>
+                <p className="text-[13px] text-gray-400 uppercase"><span className="font-semibold text-neutral-500">Category:</span> {productCategory || "Furniture"}</p>
                 <div className="flex gap-4 mt-2">
-                    <a href="#" className="text-gray-500 hover:text-gray-700">Share</a>
-                    <a href="#" className="text-gray-500 hover:text-gray-700">Facebook</a>
-                    <a href="#" className="text-gray-500 hover:text-gray-700">Twitter</a>
-                    <a href="#" className="text-gray-500 hover:text-gray-700">LinkedIn</a>
+                    <Link href="facebook.com" className="text-gray-500 hover:text-gray-700"><FaFacebook /></Link>
+                    <Link href="x.com" className="text-gray-500 hover:text-gray-700"><FaTwitterSquare /></Link>
+                    <Link href="linkedin.com" className="text-gray-500 hover:text-gray-700"><FaLinkedin /></Link>
+                    <Link href="web.whatsapp.com" className="text-gray-500 hover:text-gray-700"><FaDiscord /></Link>
                 </div>
             </div>
         </div>
