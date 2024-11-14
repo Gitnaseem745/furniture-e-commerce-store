@@ -43,8 +43,7 @@ const ProductPage = ({ params }: ProductPageProps) => {
   if (!product) return <p className='flex justify-center items-center w-full h-[400px] text-2xl font-semibold'>Loading Product Details...</p>;
 
   return (
-    <div className="px-10">
-      <Navbar />
+    <div className="px-[90px]">
       <ProductTopSection
         productDescription={product.shortDis}
         productName={product.name}
