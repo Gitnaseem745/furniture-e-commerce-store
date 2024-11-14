@@ -11,8 +11,13 @@ interface Product {
     img: string;
     category: string;
     longDis: string;
-    additionalInfo: string;
+    additionalInfo: {
+      color: string;
+      material: string;
+      style: string;
+    };
   }
+  
 const Page = () => {
     const [products, setProducts] = useState<Product[] | null>(null);
     useEffect(() => {
