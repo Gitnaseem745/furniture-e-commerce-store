@@ -21,6 +21,7 @@ interface Product {
 export async function GET(req: Request) {
   const url = new URL(req.url);
   const name = url.searchParams.get('name');
+  const category = url.searchParams.get('category');
   const filePath = path.join(process.cwd(), 'products.json');
 
   try {
@@ -35,14 +36,21 @@ export async function GET(req: Request) {
             return normalizeString(p.name).includes(normalizeString(name));
         }
       );
-
       if (!product) {
         return NextResponse.json({ message: 'Product not found' }, { status: 404 });
       }
 
       return NextResponse.json(product, { status: 200 });
     }
-
+    if (category) {
+        const productsByCategory = products.filter(
+            (p) => (p.category.toLowerCase().replaceAll(' ', '').includes(category.toLowerCase().replaceAll('-', '')))
+        )
+        if (!productsByCategory) {
+            return NextResponse.json( { message: "Category Not Found!" }, { status: 500 })
+        }
+        return NextResponse.json(productsByCategory, { status: 200 });
+      }
     return NextResponse.json(products, { status: 200 });
   } catch (err) {
     console.error(err);
