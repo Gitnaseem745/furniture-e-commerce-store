@@ -2,6 +2,7 @@
 import { use, useEffect, useState } from 'react';
 import Navbar from '@/components/Navbar';
 import ProductTopSection from '@/components/ProductTopSection';
+import ProductBottomSection from '@/components/ProductBottomSection';
 
 interface ProductPageProps {
   params: Promise<{ name: string }>
@@ -15,7 +16,11 @@ interface Product {
   img: string;
   category: string;
   longDis: string;
-  additionalInfo: string;
+  additionalInfo: {
+    color: string;
+    material: string;
+    style: string;
+  };
 }
 
 const ProductPage = ({ params }: ProductPageProps) => {
@@ -35,7 +40,7 @@ const ProductPage = ({ params }: ProductPageProps) => {
     fetchProduct();
   }, [name]);
 
-  if (!product) return <p>Loading...</p>;
+  if (!product) return <p className='flex justify-center items-center w-full h-[400px] text-2xl font-semibold'>Loading Product Details...</p>;
 
   return (
     <div className="px-10">
@@ -47,6 +52,7 @@ const ProductPage = ({ params }: ProductPageProps) => {
         productImgUrl={product.img}
         productCategory={product.category}
       />
+      <ProductBottomSection desc={product.longDis} information={product.additionalInfo} />
     </div>
   );
 };

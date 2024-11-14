@@ -25,7 +25,7 @@ const ProductTopSection: React.FC<ProductTopSectionProps> = ({
 }) => {
     const [count, setCount] = useState<number>(1);
   return (
-    <section className="flex flex-row gap-8 w-full max-w-screen-xl max-h-screen mx-auto  bg-white p-8 rounded-lg max-md:flex-col">
+    <section className="flex flex-row gap-8 w-full max-w-screen-xl max-h-screen   bg-white p-8 rounded-lg max-md:flex-col">
         <div className="w-1/2 max-md:w-full flex justify-center items-center bg-[#F8F8F8] rounded-lg p-6 overflow-hidden">
         <Image src={`/${productImgUrl}`} width={400} height={400}
         className="w-[480px] h-[600px] object-cover hover:scale-110 transition-transform duration-300"
