@@ -29,7 +29,11 @@ export async function GET(req: Request) {
 
     if (name) {
       const product = products.find(
-        (p) => p.name.toLowerCase().replaceAll(' ', '') === name.replaceAll('-', '').toLowerCase()
+        (p) => {
+            // updated for fetching products with name like Two-Seater | Mid-Century
+            const normalizeString = (str: string) => str.toLowerCase().replace(/[^a-z0=9]/g, '');
+            return normalizeString(p.name).includes(normalizeString(name));
+        }
       );
 
       if (!product) {
