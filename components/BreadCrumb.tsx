@@ -3,8 +3,10 @@
 import { usePathname, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { FaGreaterThan } from 'react-icons/fa6'
-
-export default function BreadCrumb() {
+interface BreadCrumbProps {
+    hoverColor?: string
+}
+const BreadCrumb: React.FC<BreadCrumbProps> = ({ hoverColor = '#274C4F' }) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const pathSegments = pathname.split('/').filter(Boolean);
@@ -13,7 +15,7 @@ export default function BreadCrumb() {
     <nav aria-label="breadcrumb" className="flex items-center space-x-2 text-[12px] font-semibold uppercase">
       <ol className="flex items-center space-x-2">
         <li>
-          <Link href="/" className="hover:underline hover:text-[#274C4F]">
+          <Link href="/" className={`hover:underline hover:text-[${hoverColor}]`}>
             Home
           </Link>
         </li>
@@ -25,7 +27,7 @@ export default function BreadCrumb() {
             <li key={href} className="flex items-center">
               <span className="px-2 text-gray-400"><FaGreaterThan /></span>
               {isLast ? (
-                <span className="text-gray-800">
+                <span className={`text-['#1F2937' || ${hoverColor}]`}>
                   {segment.replace(/-/g, ' ')}
                 </span>
               ) : (
@@ -38,10 +40,11 @@ export default function BreadCrumb() {
         })}
         {searchParams && searchParams.toString() && (
           <li className="flex items-center">
-            <span className="text-gray-800">{searchParams.toString()}</span>
+            <span className={`text-['#1F2937' || ${hoverColor}]`}>{searchParams.toString()}</span>
           </li>
         )}
       </ol>
     </nav>
   );
 }
+export default BreadCrumb;
