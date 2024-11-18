@@ -15,7 +15,7 @@ const PageIntro: React.FC<PageIntroProps> = ({ sectionBgImage, sectionName }) =>
     >
         <div className="w-full opacity-45 h-[350px] bg-black"></div>
         <div className="absolute">
-            <h1 className="text-3xl font-semibold mb-4">
+            <h1 className="text-3xl font-semibold mb-4 text-center">
                 {sectionName}
             </h1>
             <BreadCrumb hoverColor={'white'}/>
