@@ -29,7 +29,7 @@ const HomeCard: React.FC<HomeCardProps> = ({
         }}
         className={`flex flex-col ${button ? 'justify-between' : 'justify-end'} bg-no-repeat bg-cover bg-left-bottom p-4 rounded-xl`}
     >
-        <div className="bg-white max-w-fit rounded-[10px] py-3 px-5 z-10 text-black shadow-xl">
+        <div className="bg-white max-w-fit rounded-[10px] py-3 px-5 z-1 text-black shadow-xl">
             <h1 className="font-bold">{productTitle}</h1>
             <p className="text-neutral-600">{productPrice}</p>
         </div>

@@ -28,7 +28,7 @@ const ContactForm: React.FC = () => {
       <div className="md:w-1/2 bg-white border-[1px] p-6 rounded-xl">
         <h2 className="text-2xl font-bold mb-4">Get in touch</h2>
         <p className="text-gray-600 mb-6">
-          Blandit at maecenas dui sed amet sit enim vitae. Amet purus dictum urna sagittis dignissim.
+        Blandit at maecenas dui sed amet sit enim vitae. Amet purus dictum urna sagittis dignissim.At fermentum nisl ullamcorper orci.
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div className="flex gap-4">
@@ -102,20 +102,12 @@ const ContactForm: React.FC = () => {
         <div>
           <h2 className="text-2xl font-bold mb-8">Furniture store & showrooms</h2>
           <p className="text-gray-600">
-            Et adipiscing mattis egestas mi placerat duis congue id. Scelerisque integer pulvinar justo sed.
+            Et adipiscing mattis egestas mi placerat duis congue id. Scelerisque integer pulvinar justo sed egetpretium ipsum id faucibus euismod
           </p>
         </div>
-        <MapContainer
-          center={[45.07, 7.69]}
-          zoom={12}
-          style={{ height: '300px', borderRadius: '10px', overflow: 'hidden', zIndex: 1, }}
-        >
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          />
-          <Marker position={[45.07, 7.69]} />
-        </MapContainer>
+        <div className='w-full bg-slate-300 h-[350px] rounded-xl flex justify-center items-center'>
+            <h1 className='text-3xl text-neutral-600'>Loading Map...</h1>
+        </div>
         <div className="grid grid-cols-3 text-sm">
           <div>
             <h3 className="font-bold">Address</h3>
