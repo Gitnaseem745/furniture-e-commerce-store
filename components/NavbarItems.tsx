@@ -7,7 +7,7 @@ const NavbarItems: React.FC<NavbarItemsProps> = ({ divCss, linkCss }) => (
     <div className={`flex ${divCss}`}>
             {
                 menuItems.map((item, i) => (
-                    <Link className={`${linkCss}`} href={`/${item.toLowerCase().replaceAll(" ", "-")}`} key={i}>{item}</Link>
+                    <Link className={`${linkCss}`} href={`/${item == "Home" ? '' : item.toLowerCase().replaceAll(" ", "-")}`} key={i}>{item}</Link>
                 ))
             }
         </div>
