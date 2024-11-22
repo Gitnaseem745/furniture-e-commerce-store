@@ -21,12 +21,13 @@ interface Product {
 export async function GET(req: Request) {
   const url = new URL(req.url);
   const name = url.searchParams.get('name');
+  const limit = url.searchParams.get('limit');
   const category = url.searchParams.get('category');
   const filePath = path.join(process.cwd(), 'products.json');
 
   try {
     const data = await fs.readFile(filePath, 'utf8');
-    const products: Product[] = JSON.parse(data);
+    let products: Product[] = JSON.parse(data);
 
     if (name) {
       const product = products.find(
@@ -43,14 +44,20 @@ export async function GET(req: Request) {
       return NextResponse.json(product, { status: 200 });
     }
     if (category) {
-        const productsByCategory = products.filter(
+        products = products.filter(
             (p) => (p.category.toLowerCase().replaceAll(' ', '').includes(category.toLowerCase().replaceAll('-', '')))
         )
-        if (!productsByCategory) {
+        if (!products) {
             return NextResponse.json( { message: "Category Not Found!" }, { status: 500 })
         }
-        return NextResponse.json(productsByCategory, { status: 200 });
       }
+     // updated for fetching limited products
+     if (limit) {
+        const productLimit = parseInt(limit, 10);
+        if(!isNaN(productLimit)) {
+            products = products.slice(0, productLimit);
+        }
+     }
     return NextResponse.json(products, { status: 200 });
   } catch (err) {
     console.error(err);
