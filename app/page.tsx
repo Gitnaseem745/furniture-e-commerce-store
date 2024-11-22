@@ -5,6 +5,7 @@ import SpecialOfferCard from "@/components/SpecialOfferCard";
 import HeroCard from "@/components/HeroCard";
 import BrowseByRooms from "@/components/BrowseByRooms";
 import BestSeller from "@/components/BestSeller";
+import BestQuality from "@/components/BestQuality";
 
  const Home: React.FC = () => (
      <>
@@ -18,6 +19,7 @@ import BestSeller from "@/components/BestSeller";
                 Quam elementum pulvinar etiam non quam. Faucibus nisl tincidunt eget <br/> nullam non nisi elementum sagittis vitae et leo duis ut diam quam.
             </BestSeller>
             <SpecialOfferCard />
+            <BestQuality />
         </div>
     </>
   );

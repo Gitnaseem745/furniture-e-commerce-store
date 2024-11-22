@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
+import Link from "next/link";
 
 interface BestSellerProps {
     title: string;
@@ -46,7 +47,9 @@ const BestSeller: React.FC<BestSellerProps> = ({ title, children, limit, categor
         </p>
         <div className="flex flex-row justify-center items-center flex-wrap gap-4 mt-4">
             {products?.map((product) => (
-                <ProductCard key={product.id} productName={product.name} productImgUrl={product.img} productCategory={product.category} productPrice={product.price} />
+               <Link href={`/products/${product.name.toLowerCase().replaceAll(' ', "-")}`} key={product.id} >
+               <ProductCard productName={product.name} productPrice={product.price} productImgUrl={product.img} productCategory={product.category}  />
+               </Link>
             ))}
         </div>
     </div>
