@@ -2,7 +2,7 @@
 import Button from "./Button";
 import HomeCard from "./HomeCard";
 
-const HeroCard = () => {
+const HeroCard: React.FC = () => {
   return (
     <div className="w-full max-h-fit rounded-3xl px-10 py-14 bg-[#EEF4F5] flex flex-row gap-10 justify-center items-center">
         <div className="flex flex-col gap-8 items-start justify-start w-5/12">

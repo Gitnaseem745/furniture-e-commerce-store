@@ -1,8 +1,7 @@
-import React from 'react'
+'use client';
 import HomeCard from './HomeCard'
-import Button from './Button'
 
-const BrowseByRooms = () => {
+const BrowseByRooms: React.FC = () => {
   return (
     <div className="w-[94%] max-h-fit rounded-3xl p-12 bg-[#152420] flex flex-row gap-6 justify-center items-center">
         <div className="flex flex-col gap-10 items-start justify-start w-6/12 text-white">

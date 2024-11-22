@@ -13,7 +13,7 @@ interface ProductCardProps {
     addToCart?: boolean;
 }
 const ProductCard: React.FC<ProductCardProps> = ({
-    productImgUrl = "https://startersites.io/blocksy/furniture/wp-content/uploads/2024/05/product-41-500x500.webp",
+    productImgUrl = "images/product-41.webp",
     productName = "Commodo Amcorper",
     productCategory = "BEDS",
     productPrice = "$1,250.00",
