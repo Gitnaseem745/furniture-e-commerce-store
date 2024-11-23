@@ -12,7 +12,7 @@ const BestQuality: React.FC = () => {
             <p className="pr-16 text-[16px] leading-[26px] tracking-wide text-neutral-700">
                 Donec et odio pellentesque diam volutpat commodo amet consectetur adipiscing elit ut aliquam purus vitae et leo duis ut diam quam nulla porttitor. Sodales ut eu sem integer vitae justo eget magna.
             </p>
-            <Button buttonText="Learn More" link="about" />
+            <Button buttonText="Learn More" link="about-us" />
         </div>
         <div className="w-7/12 flex flex-row gap-6 justify-center items-center">
             <div className="flex gap-4 justify-center items-center w-full h-[580px]">
