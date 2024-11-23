@@ -6,6 +6,8 @@ import HeroCard from "@/components/HeroCard";
 import BrowseByRooms from "@/components/BrowseByRooms";
 import BestSeller from "@/components/BestSeller";
 import BestQuality from "@/components/BestQuality";
+import Partners from "@/components/Partners";
+import Newsletter from "@/components/Newsletter";
 
  const Home: React.FC = () => (
      <>
@@ -21,6 +23,8 @@ import BestQuality from "@/components/BestQuality";
             <SpecialOfferCard />
             <BestQuality />
         </div>
+            <Partners />
+            <Newsletter />
     </>
   );
 
