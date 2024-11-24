@@ -2,25 +2,24 @@
 import Button from "./Button";
 import HomeCard from "./HomeCard";
 
+const images = [1, 2, 3]
 const HeroCard: React.FC = () => {
   return (
-    <div className="w-full max-h-fit rounded-3xl px-10 py-14 bg-[#EEF4F5] flex flex-row gap-10 justify-center items-center">
-        <div className="flex flex-col gap-8 items-start justify-start w-5/12">
-            <h1 className="text-6xl font-bold tracking-tight leading-[72px]">
+    <div className="w-full max-h-fit rounded-3xl px-10 py-14 bg-[#EEF4F5] flex flex-row gap-10 justify-center items-center max-sm:flex-col">
+        <div className="flex flex-col gap-8 items-start justify-start w-5/12 max-sm:justify-center max-sm:items-center max-sm:w-full max-sm:text-center">
+            <h1 className="text-6xl font-bold tracking-tight leading-[72px] max-sm:text-4xl">
                 Exquisite design combined with functionalities
             </h1>
-            <p className="pr-16 text-lg leading-[30px] tracking-wide text-neutral-700">
+            <p className="pr-16 text-lg max-sm:pr-0 leading-[30px] tracking-wide text-neutral-700">
                 Pellentesque ullamcorper dignissim condimentum volutpat consequat mauris nunc lacinia quis.
             </p>
-            <div className="bg-[#E2EDEF] w-8/12 px-4 py-5 rounded-full justify-center items-center flex flex-row mb-4 gap-2">
-                <img src="images/home-avatar-1.webp" alt="" className="rounded-full w-[30px]" />
-                <img src="images/home-avatar-2.webp" alt="" className="rounded-full w-[30px]" />
-                <img src="images/home-avatar-3.webp" alt="" className="rounded-full w-[30px]" />
+            <div className="bg-[#E2EDEF] w-8/12 px-4 py-5 rounded-full justify-center items-center flex flex-row mb-4 gap-2 max-sm:w-full flex-wrap">
+                {images.map((num) => <img src={`images/home-avatar-${num}.webp`} key={num} alt="" className="rounded-full w-[30px]" />)}
                 <p className="text-neutral-600">Contact with our expert</p>
             </div>
             <Button buttonText="Shop Now" link="/" />
         </div>
-        <div className="w-7/12 flex flex-row gap-6 justify-center items-start">
+        <div className="w-7/12 flex flex-row gap-6 justify-center items-start max-sm:w-full flex-wrap">
             <HomeCard backgroundImgUrl={heroCardData[0].backgroundImgUrl} productTitle={heroCardData[0].productTitle} productPrice={heroCardData[0].productPrice} productPageLink={heroCardData[0].productPageLink} width={heroCardData[0].width} height={heroCardData[0].height} button={heroCardData[0].button} />
             <div>
                 <HomeCard backgroundImgUrl={heroCardData[1].backgroundImgUrl} productTitle={heroCardData[1].productTitle} productPrice={heroCardData[1].productPrice} productPageLink={heroCardData[1].productPageLink} width={heroCardData[1].width} height={heroCardData[1].height} button={heroCardData[1].button} />
