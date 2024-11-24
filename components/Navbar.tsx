@@ -21,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = ({
                 <IoIosSearch className="absolute right-5 top-[29%] text-xl "/>
             </div>
         </div>
-        <div className="flex flex-row items-center gap-10 justify-end">
+        <div className="flex flex-row items-center gap-10 justify-end max-lg:hidden">
             <NavbarItems divCss="gap-8" linkCss="hover:text-[#456A6D] transition-all ease-in delay-75"/>
             <div className="flex gap-8">
                 {

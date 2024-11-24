@@ -50,7 +50,7 @@ const page = ({ params } : PageProps) => {
          <div className='w-11/12'>
             <PageIntro sectionBgImage={`/images/${category}-category-hero-image.webp`} sectionName={toCapitalCase(category)} />
          </div>
-         <div className='flex flex-row justify-center items-center w-11/12 gap-4'>
+         <div className='flex flex-row justify-center items-center w-11/12 gap-10 flex-wrap'>
             {
                 categories.map((cat, i) => (
                    cat.name.toLowerCase() != category && <Link key={i} href={`/product-category/${cat.name.toLowerCase()}`}>
