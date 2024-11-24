@@ -1,6 +1,3 @@
-import Link from "next/link";
-import HomeCard from "../components/HomeCard";
-import ProductCard from "../components/ProductCard";
 import SpecialOfferCard from "@/components/SpecialOfferCard";
 import HeroCard from "@/components/HeroCard";
 import BrowseByRooms from "@/components/BrowseByRooms";

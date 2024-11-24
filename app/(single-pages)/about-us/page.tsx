@@ -26,16 +26,16 @@ const About = () => {
             <p className='text-neutral-600 text-center text-sm mb-2'>Quam elementum pulvinar etiam non quam. Faucibus nisl tincidunt eget nullam <br/> non nisi elementum sagittis vitae et leo duis ut diam quam.</p>
             <div className='flex flex-row gap-6 flex-wrap justify-center items-center'>
                 {
-                    teamMembers.map((member, i) => <HomeCard width={415} height={415} button={false} productTitle={member.name} backgroundImgUrl={member.img} productPrice={member.position} />)
+                    teamMembers.map((member, i) => <HomeCard key={i} width={415} height={415} button={false} productTitle={member.name} backgroundImgUrl={member.img} productPrice={member.position} />)
                 }
             </div>
         </div>
-        <div className='flex flex-row gap-10 justify-center items-center w-full my-10'>
-            <div className='flex flex-col gap-5 justify-start items-start'>
-                <h1 className='text-3xl font-semibold'>Furniture that will last a lifetime</h1>
-                <p className='text-sm text-neutral-600 pr-44'>Sit massa etiam urna id. Non pulvinar aenean ultrices lectus vitae imperdiet vulputate a eu. Aliquet ullamcorper leo mi vel sit pretium euismod eget libero. Nullam iaculis vestibulum arcu id urna. In pellentesque volutpat quis condimentum lectus</p>
+        <div className='flex flex-row gap-10 justify-center items-center w-full my-20 px-10'>
+            <div className='flex flex-col gap-5 justify-start items-start w-5/12'>
+                <h1 className='text-2xl font-semibold'>Furniture that will last a lifetime</h1>
+                <p className='text-neutral-600 leading-[28px] pr-6'>Sit massa etiam urna id. Non pulvinar aenean ultrices lectus vitae imperdiet vulputate a eu. Aliquet ullamcorper leo mi vel sit pretium euismod eget libero. Nullam iaculis vestibulum arcu id urna. In pellentesque volutpat quis condimentum lectus</p>
                 <Link
-                className="bg-white rounded-3xl max-w-fit px-6 py-3 hover:bg-[#274C4F] text-black hover:text-white transition-all ease-in delay-50 shadow-lg"
+                className="bg-white rounded-3xl max-w-fit px-6 py-3 hover:bg-[#274C4F] text-black hover:text-white transition-all ease-in delay-50 shadow-lg mt-4"
                 href={'/'}
             >
                 Learn More
