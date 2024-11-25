@@ -8,12 +8,12 @@ const Footer = () => {
     return (
     <footer className="bg-[#EEF4F5] p-8 text-neutral-600 w-full font-extralight text-sm tracking-wide">
       <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between mb-8">
+        <div className="flex justify-between mb-8 flex-wrap gap-y-10">
           <div>
             <h3 className="text-[16px] font-semibold text-black mb-2">Get in touch with us</h3>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
           </div>
-          <div className="flex space-x-20 text-[13px]">
+          <div className="flex text-[13px] flex-wrap justify-between items-center gap-x-20 gap-y-5">
             {companyDetails.map((details, i) => (
                 <div key={i} >
                     <span className="font-semibold text-black">{details.title}:</span>
@@ -35,10 +35,10 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        
+
         <hr className="my-8" />
 
-        <div className="flex justify-between items-center mt-8">
+        <div className="flex justify-between items-center mt-8 flex-wrap gap-y-6 max-sm:justify-center">
           <p className="text-sm">{copy}</p>
           <div className="flex space-x-4">
             {socialIcons.map((icon, i) =>
