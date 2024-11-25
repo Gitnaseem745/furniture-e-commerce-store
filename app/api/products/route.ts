@@ -40,12 +40,12 @@ export async function GET(req: Request) {
       if (!product) {
         return NextResponse.json({ message: 'Product not found' }, { status: 404 });
       }
-
       return NextResponse.json(product, { status: 200 });
     }
     if (category) {
         products = products.filter(
-            (p) => (p.category.toLowerCase().replaceAll(' ', '').includes(category.toLowerCase().replaceAll('-', '')))
+            // fixes for ( armchairs includes chairs ) both category products on chairs category
+            (p) => (p.category.toLowerCase().replaceAll(' ', '') === (category.toLowerCase().replaceAll('-', '')))
         )
         if (!products) {
             return NextResponse.json( { message: "Category Not Found!" }, { status: 500 })
