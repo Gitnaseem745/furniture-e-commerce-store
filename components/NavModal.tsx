@@ -7,21 +7,16 @@ import { FaFacebook, FaGithub, FaInstagram } from "react-icons/fa6";
 import { FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
-const NavModal: React.FC = () => {
-    const [showModal, setShowModal] = useState(true); // shift this to navbar and pass from there
-    const handleShowModal = () => {
-        setShowModal(true);
-    }
-    const handleHideModal = () => {
-        setShowModal(false);
-    }
+interface NavModalProps {
+    onClickHideModal: any;
+}
+const NavModal: React.FC<NavModalProps> = ({onClickHideModal}) => {
     return (
-    showModal &&
-        <div className="w-full fixed z-20 font-semibold ml-14 pl-8 pr-[86px] py-14 bg-[#16191D] h-screen flex flex-col  gap-12 text-neutral-400">
-        <h1 className="text-3xl font-semibold text-white">Furniture</h1>
-        <div className="w-full h-screen relative">
-            <CgClose onClick={handleHideModal} className="absolute right-5 top-6 cursor-pointer text-xl" />
+        <div className="w-full fixed top-0 z-20 font-semibold ml-14 pl-8 pr-[86px] py-14 bg-[#16191D] h-screen flex flex-col  gap-12 text-neutral-400">
+        <div className="w-8/12 relative flex justify-end items-start flex-wrap">
+            <CgClose onClick={onClickHideModal} className="absolute top-4 right-4 md:top-6 md:right-6 max-sm:left-64 max-sm:top-0 cursor-pointer text-xl text-white"/>
         </div>
+        <h1 className="text-3xl font-semibold text-white">Furniture</h1>
         <NavbarItems divCss="flex-col gap-3" />
         <hr className="text-neutral-300 opacity-20" />
         <CategoryItems divCss="flex-col gap-3"/>
