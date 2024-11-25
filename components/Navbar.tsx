@@ -5,6 +5,9 @@ import { FaRegHeart, FaShuffle } from "react-icons/fa6";
 import { IoIosSearch, IoMdContact } from "react-icons/io";
 import { RiShoppingBag2Line } from "react-icons/ri";
 import NavbarItems from "./NavbarItems";
+import { IoMenuSharp } from "react-icons/io5";
+import { useState } from "react";
+import NavModal from "./NavModal";
 interface NavbarProps {
     desktop?: boolean;
     mobile?: boolean;
@@ -12,11 +15,15 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({
     desktop = true,
     mobile = false,
-}) => (
-    <nav className="w-full h-[100px] fixed top-0 bg-white text-black z-10 grid grid-cols-2 gap-9 px-[120px]">
+}) => {
+    const [showModal, setShowModal] = useState<boolean>(false);
+    const onClickShowModal = () => setShowModal(true);
+    const onClickHideModal = () => setShowModal(false);
+    return (
+    <nav className="w-full h-[100px] fixed top-0 bg-white text-black z-10 grid grid-cols-2 gap-9 px-[120px] max-lg:justify-between max-lg:items-center">
         <div className="flex flex-row justify-start items-center gap-8">
             <Link href={'/'} className="text-2xl font-semibold">Furniture</Link>
-            <div className="relative">
+            <div className="relative max-lg:hidden">
                 <input className="w-[382px] h-[45px] border-[2px] p-2 pl-5 rounded-full focus:outline-none focus:border-[#274C4F]" type="text" placeholder="Search" />
                 <IoIosSearch className="absolute right-5 top-[29%] text-xl "/>
             </div>
@@ -29,8 +36,12 @@ const Navbar: React.FC<NavbarProps> = ({
                 }
             </div>
         </div>
+        <IoMenuSharp className="w-full hidden max-md:block text-black size-8 cursor-pointer text-wrap" onClick={onClickShowModal} />
+        {
+            showModal && <NavModal onClickHideModal={onClickHideModal} />
+        }
     </nav>
-)
+)}
 const icons = [
     {
         icon: <IoMdContact />,
