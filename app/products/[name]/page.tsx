@@ -1,6 +1,5 @@
 "use client";
 import { use, useEffect, useState } from 'react';
-import Navbar from '@/components/Navbar';
 import ProductTopSection from '@/components/ProductTopSection';
 import ProductBottomSection from '@/components/ProductBottomSection';
 

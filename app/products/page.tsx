@@ -3,6 +3,7 @@ import ProductCard from '@/components/ProductCard'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
+
 interface Product {
     id: string;
     name: string;
@@ -17,7 +18,7 @@ interface Product {
       style: string;
     };
   }
-  
+
 const Page = () => {
     const [products, setProducts] = useState<Product[] | null>(null);
     useEffect(() => {

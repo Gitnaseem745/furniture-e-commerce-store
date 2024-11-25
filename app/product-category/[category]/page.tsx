@@ -4,6 +4,7 @@ import ProductCard from '@/components/ProductCard';
 import ProductCategoryCard from '@/components/ProductCategoryCard';
 import Link from 'next/link';
 import React, { use, useEffect, useState } from 'react'
+
 interface PageProps {
     params : Promise<{ category: string; }>
 }

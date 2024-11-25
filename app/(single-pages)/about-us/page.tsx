@@ -3,7 +3,12 @@ import PageIntro from '@/components/PageIntro'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "About Us - Furniture",
+    description: "Your one way to shop for furniture :)",
+  };
 const About = () => {
   return (
     <div className='px-[90px]'>
