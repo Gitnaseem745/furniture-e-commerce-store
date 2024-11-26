@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
 const ContactForm: React.FC = () => {
@@ -97,7 +96,6 @@ const ContactForm: React.FC = () => {
         </form>
       </div>
 
-      {/* Contact Info & Map */}
       <div className="md:w-1/2 flex flex-col gap-10">
         <div>
           <h2 className="text-2xl font-bold mb-8">Furniture store & showrooms</h2>
@@ -105,9 +103,8 @@ const ContactForm: React.FC = () => {
             Et adipiscing mattis egestas mi placerat duis congue id. Scelerisque integer pulvinar justo sed egetpretium ipsum id faucibus euismod
           </p>
         </div>
-        <div className='w-full bg-slate-300 h-[350px] rounded-xl flex justify-center items-center'>
-            <h1 className='text-3xl text-neutral-600'>Loading Map...</h1>
-        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1387.4513414461344!2d78.76583953366985!3d28.804359684097264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390afb75550eecf3%3A0xf7838b48be875b14!2sFair%20Enterprises!5e0!3m2!1sen!2sin!4v1732644889741!5m2!1sen!2sin" width="600" height="450" className='bg-slate-300 rounded-xl flex justify-center items-center'>
+        </iframe>
         <div className="grid grid-cols-3 text-sm">
           <div>
             <h3 className="font-bold">Address</h3>
