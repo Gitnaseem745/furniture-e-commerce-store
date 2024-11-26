@@ -43,7 +43,7 @@ const FAQSection: React.FC = () => {
           />
         </div>
       </div>
-      <div className="md:w-1/2 space-y-4 mt-32">
+      <div className="md:w-1/2 space-y-4 mt-32 max-sm:mt-8">
         {faqItems.map((item, index) => (
           <div
             key={index}

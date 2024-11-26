@@ -22,7 +22,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row gap-10 p-10">
+    <div className="flex flex-col md:flex-row gap-10 p-10 max-sm:p-1 max-sm:my-10">
       {/* Contact Form */}
       <div className="md:w-1/2 bg-white border-[1px] p-6 rounded-xl">
         <h2 className="text-2xl font-bold mb-4">Get in touch</h2>
@@ -96,16 +96,16 @@ const ContactForm: React.FC = () => {
         </form>
       </div>
 
-      <div className="md:w-1/2 flex flex-col gap-10">
+      <div className="md:w-1/2 flex flex-col gap-10 max-sm:p-5">
         <div>
           <h2 className="text-2xl font-bold mb-8">Furniture store & showrooms</h2>
           <p className="text-gray-600">
             Et adipiscing mattis egestas mi placerat duis congue id. Scelerisque integer pulvinar justo sed egetpretium ipsum id faucibus euismod
           </p>
         </div>
-        <iframe src={mapLocation} width="600" height="450" className='bg-slate-300 rounded-xl flex justify-center items-center'>
+        <iframe src={mapLocation} max-width="600" height="450" className='bg-slate-300 rounded-xl flex justify-center items-center'>
         </iframe>
-        <div className="grid grid-cols-3 text-sm">
+        <div className="grid grid-cols-3 text-sm max-sm:grid-cols-2 max-sm:gap-6">
             {Details.map((detail, i) => (
                 <div key={i}>
                     <h3 className="font-bold">{detail.title}</h3>
