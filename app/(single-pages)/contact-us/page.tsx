@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   };
 const Contact = () => {
   return (
-    <div className='px-[90px]'>
+    <div className='px-[90px] max-sm:px-4'>
         <PageIntro sectionName={'Contact Us'} sectionBgImage={'images/contactSectionBg.webp'}/>
         <ContactForm />
         <FAQSection />

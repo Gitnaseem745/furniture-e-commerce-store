@@ -28,7 +28,7 @@ const FAQSection: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#F4F8FA] p-10 rounded-lg flex flex-col md:flex-row gap-10">
+    <div className="bg-[#F4F8FA] p-10 rounded-lg flex flex-col md:flex-row gap-10 max-sm:p-3">
       <div className="md:w-1/2">
         <h2 className="text-2xl font-bold mb-4">Frequently asked questions</h2>
         <p className="text-gray-600">
