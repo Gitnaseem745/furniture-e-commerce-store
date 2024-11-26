@@ -103,28 +103,32 @@ const ContactForm: React.FC = () => {
             Et adipiscing mattis egestas mi placerat duis congue id. Scelerisque integer pulvinar justo sed egetpretium ipsum id faucibus euismod
           </p>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1387.4513414461344!2d78.76583953366985!3d28.804359684097264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390afb75550eecf3%3A0xf7838b48be875b14!2sFair%20Enterprises!5e0!3m2!1sen!2sin!4v1732644889741!5m2!1sen!2sin" width="600" height="450" className='bg-slate-300 rounded-xl flex justify-center items-center'>
+        <iframe src={mapLocation} width="600" height="450" className='bg-slate-300 rounded-xl flex justify-center items-center'>
         </iframe>
         <div className="grid grid-cols-3 text-sm">
-          <div>
-            <h3 className="font-bold">Address</h3>
-            <p>7914 Lees Creek</p>
-            <p>St. Dayton, OH 45420</p>
-          </div>
-          <div>
-            <h3 className="font-bold">Phone</h3>
-            <p>(437) 402-2459</p>
-            <p>(928) 630-9272</p>
-          </div>
-          <div>
-            <h3 className="font-bold">Email</h3>
-            <p>info@company.com</p>
-            <p>sales@company.com</p>
-          </div>
+            {Details.map((detail, i) => (
+                <div key={i}>
+                    <h3 className="font-bold">{detail.title}</h3>
+                    {detail.content.map((content, i) => <p key={i}>{content}</p>)}
+                </div>))}
         </div>
       </div>
     </div>
   );
 };
-
+const Details = [
+    {
+        title: "Address",
+        content: ["7914 Lees Creek", "St. Dayton, OH 45420"],
+    },
+    {
+        title: "Phone",
+        content: ["(437) 402-2459", "(928) 630-9272"],
+    },
+    {
+        title: "Email",
+        content: ["info@company.com", "sales@company.com"],
+    },
+]
+const mapLocation = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1387.4513414461344!2d78.76583953366985!3d28.804359684097264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390afb75550eecf3%3A0xf7838b48be875b14!2sFair%20Enterprises!5e0!3m2!1sen!2sin!4v1732644889741!5m2!1sen!2sin";
 export default ContactForm;
